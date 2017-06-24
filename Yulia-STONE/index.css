@@ -98,4 +98,20 @@
 .social:hover {
 	opacity: 0.5; 
 }
+#marat, #andrei, #year {
+	margin-top: 30px;
+	margin-bottom: 5px;
+	text-align: center;
+	fon
+}
+#marat:hover, #andrei:hover {
+	text-decoration: none;
+	color: #bcd0c9;
+}
+#year {
+	text-decoration: none;
+}
+#year:hover {
+	color: black;
+}
 
