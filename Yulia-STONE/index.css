@@ -14,7 +14,6 @@
 }
 #main_phone{
 	float: left;
-	padding-top: 5px;
 	margin-left: -15px;
 }
 #e-mail {
@@ -25,7 +24,7 @@
 	padding-top: 30px;
 }
 #main_picture {
-	background-image: url(Images/pebble-texture-pebbles-textures-stone-sea-stones.jpg);	
+	background-image: url(Images/main1920.png);	
 	height: 700px;	
 }
 #main_text {
@@ -38,7 +37,7 @@
 	font-weight: bold;
 }
 #about_us {
-	height: 700px;
+	height: 930px;
 	background-color: #bcd0c9;
 }
 #about_us1 {
@@ -51,6 +50,9 @@
 	margin-top: 90px;
 	text-align: center;
 	font-size: 30px;
+}
+#text1, #text2, #text3 {
+	text-align: left;
 }
 #production {
 	height: 700px;
@@ -65,7 +67,7 @@
 }
 #advantages {
 	background-color: #c2dfea;
-	height: 700px;
+	height: 500px;
 }
 #advantages_text {
 	text-transform: uppercase;
@@ -75,13 +77,16 @@
 	margin-bottom: 80px;
 }
 #contact {
-	height: 500px;
+	height: 600px;
 	background-color: #b9a7c2;
 }
 #contact_text {
 	margin-top: 100px;
 	margin-bottom: 50px;
 	text-align: center;
+}
+#partner_img {	
+	margin-top: 50px;
 }
 #partner {
 	text-align: center;
