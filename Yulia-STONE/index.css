@@ -98,9 +98,10 @@
 .social:hover {
 	opacity: 0.5; 
 }
-#marat, #andrei, #year {
+#credits {
 	margin-top: 30px;
-	margin-bottom: 5px;
+}
+#marat, #andrei, #year {
 	text-align: center;
 	fon
 }
@@ -108,10 +109,3 @@
 	text-decoration: none;
 	color: #bcd0c9;
 }
-#year {
-	text-decoration: none;
-}
-#year:hover {
-	color: black;
-}
-
