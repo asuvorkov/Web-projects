@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<link rel="shortcut icon" href="Images/favicon1.png" type="image/png">
+	<title>Oтзывы</title>
+	<!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="report.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="row">
+			<div class="logo">
+				<img src="Images/Logo1.png" alt="IMG not found" height="200">
+			</div>
+			<div class="speed_call">
+				<h1>быстрый звонок:<br>+79055007060</br></h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<div class="row">
+			<div class="main_panel">
+				<a class="main_panel_button" href="#">контакты</a>
+				<a class="main_panel_button" href="report.html">отзывы</a>
+				<a class="main_panel_button" href="#">проживание</a>
+				<a class="main_panel_button" href="vacancy.html">вакансии</a>
+				<a class="main_panel_button" href="index.html">о нас</a>
+			</div>
+		</div>
+	</div>
+
+	<h1>Oтзывы</h1>
+
+	<div class="wrapper">
+		<div class="row">
+			<div class="report">
+				<h3>Имя: Alex</h3><h3>Дата: 01.01.2001</h3><h3>Отзыв: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus fugit possimus itaque, fugiat earum corporis nesciunt aperiam quas veritatis amet deserunt, laborum magnam maiores quo quasi natus excepturi minima. Maiores et hic eveniet distinctio debitis velit. Perferendis, recusandae magnam, dolor quaerat ratione at, quisquam atque maxime quis facere excepturi quidem!</h3><hr>
+			</div>
+		</div>
+	</div>
+	
+	<div class="wrapper">
+		<div class="row">
+			<div class="report">
+				<h3>Имя: Alex</h3><h3>Дата: 01.01.2001</h3><h3>Отзыв: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus fugit possimus itaque, fugiat earum corporis nesciunt aperiam quas veritatis amet deserunt, laborum magnam maiores quo quasi natus excepturi minima. Maiores et hic eveniet distinctio debitis velit. Perferendis, recusandae magnam, dolor quaerat ratione at, quisquam atque maxime quis facere excepturi quidem!</h3><hr>
+			</div>
+		</div>
+	</div>
+
+	<!-- Small modal -->
+	<div class="row">
+		<div class="col-md-5 col-lg-5 col-sm-5 col-xs-5"></div>
+		<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">оставить отзыв</button>
+		</div>
+		<div class="col-md-5 col-lg-5 col-sm-5 col-xs-5"></div>
+	</div>
+
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  	<div class="modal-dialog modal-sm" role="document">
+    	<div class="modal-content">
+
+
+				<form id="form" action="send.php" method="post">
+    		<input id="phone" type="text" name="phone" required="required" placeholder="Hомер телефона..."/>
+    		<input id="name" type="text" name="name" required="required" placeholder="Имя..."/>
+    		<br>
+    		<div id="pre_text"><h3>Оставьте отзыв</h3></div>
+    		<textarea name="report" id="text" cols="30" rows="10"></textarea>
+    		<br>
+    		<input id="submit" type="submit" value="Oставить отзыв"/>
+				</form>
+    	</div>
+  	</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
