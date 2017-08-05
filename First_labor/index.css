@@ -17,7 +17,7 @@
 /* close commented backslash hack */
 
 body {
-	margin: 0px;
+	margin: 0;
 }
 
 .logo	{
@@ -36,7 +36,11 @@ body {
 	padding-top: 40px;
 	text-transform: uppercase;
 }
+#main_frame{
+	float: left;
+	width: 15%;
 
+}
 .main_panel {
 	height: 42px;
 	background-color: #2c2c2c;
@@ -44,12 +48,10 @@ body {
 
 .main_panel_button {
 	float: right;
-	margin: 0px;
-	margin-bottom: -16px;
 	border: none;
 	text-decoration: none;
 	padding: 9px 20px;
-	margin-left: 10px;
+	margin: 0 0 -16px 10px;
 	color: white;
 	text-transform: uppercase;
 	background-color: #2c2c2c;
@@ -59,28 +61,27 @@ body {
 	padding: 10px 20px;
 }
 
-.main_frame{
-	float: left;
-	width: 15%;
-	height: 100px;
-}
-
 .social {
-	padding-top: 30px;
+	padding-top: 4px;
+	margin-bottom: -2px;
 	padding-left: 10px;
 }
 .social:hover {
-	filter: brightness(0.5);
-}
+	filter: brightness(0.3);
 
-.slogan {
-	float: left;
-	width: 85%;
-	height: 100px;
-	margin: 0px;
+}
+#main_picture {
+	 background-image: url(Images/back-height-700-indigo.jpg);
+	 height: 650px;
+ }
+#slogan {
+	margin-top: 0;
+	font-size: 70px;
+	text-transform: uppercase;
+	color: red;
+	padding-top: 200px;
 	text-align: center;
 }
-
 .about_us{
 	text-align: center;
 }
