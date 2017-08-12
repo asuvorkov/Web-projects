@@ -1,6 +1,6 @@
 <?php
 
-mail("andrey.suvorkov@gmail.com", "Первый трудовой", $_REQUEST['report'], "From: andrey.suvorkov@gmail.com");
+mail("rabota@1trudovoy.ru", "Первый трудовой", $_REQUEST['report'], "From: rabota@1trudovoy.ru");
 
 
 echo "На Ваш email отправлено сообщение";
