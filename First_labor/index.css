@@ -17,7 +17,7 @@
 /* close commented backslash hack */
 
 body {
-	margin: 0;
+	margin: 0px;
 }
 
 .logo	{
@@ -58,16 +58,16 @@ h1{
 .main_panel_button {
 	float: right;
 	border: none;
+	font-size: 16px;
 	text-decoration: none;
-	padding: 9px 20px;
+	padding: 11px 20px;
 	margin: 0 0 -16px 10px;
 	color: white;
-	text-transform: uppercase;
 	background-color: #2c2c2c;
 }
 .main_panel_button:hover {
 	background: red;
-	padding: 10px 20px;
+	padding: 12px 20px;
 }
 
 .social {
@@ -80,7 +80,7 @@ h1{
 
 }
 #main_picture {
-	 background-image: url(Images/back-height-700.jpg);
+	 background-image: url(Images/main.png);
 	 height: 300px;
  }
 #slogan {
@@ -137,3 +137,6 @@ a {
 	text-decoration: none;
 	color: #bcd0c9;
 }
+
+
+
