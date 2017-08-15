@@ -99,6 +99,11 @@ h1{
 	padding-left: 50px;
 	padding-right: 50px;
 }
+.about_us_2{
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+}
 
 .speed_call_2 {
 	height: 100px;
@@ -137,7 +142,8 @@ a {
 }
 #andrei:hover {
 	text-decoration: none;
-	color: #bcd0c9;
+
+	color: #999999;
 }
 
 
