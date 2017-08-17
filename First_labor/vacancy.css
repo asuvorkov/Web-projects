@@ -22,19 +22,58 @@ body {
 
 .logo	{
 	float: left;
-	width: 20%;
 	height: 70px;
 	background-color: #f5f5f5;
 }
-
+#slogan-tel {
+	text-transform: uppercase;
+	color: #999999;
+}
+#callback {
+	color: #999999;
+}
+#phone{
+	margin-top: 5px;
+	margin-left: 10px;
+}
+#name {
+	width: 270px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+#submit {
+	font-size: 12px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	width: 160px;
+	height: 35px;
+	background-color: #ba1212;
+	border-radius: 4px;
+	border: 1px solid transparent;
+	color: white;
+	text-transform: uppercase;
+}
+#submit:hover {
+	background-color: #286090;
+}
 .speed_call {
 	float: left;
-	width: 80%;
 	height: 70px;
-	text-align: right;
+	text-align: left;
 	background-color: #f5f5f5;
-	padding-top: 20px;
 	text-transform: uppercase;
+}
+
+#test {
+	margin-top: 20px;
+	background-color: #ba1212;
+	text-transform: uppercase;
+	border-color: #ba1212;
+}
+#test:hover {
+	background-color: #286090;
+	text-transform: uppercase;
+	border-color: #286090;
 }
 
 .main_panel {
@@ -122,21 +161,6 @@ hr {
 	width: 270px;
 	margin-top: 10px;
 	margin-left: 10px;
-}
-#submit {
-	margin-left: 70px;
-	margin-top: 20px;
-	margin-bottom: 5px;
-	width: 160px;
-	height: 35px;
-	background-color: #ba1212;
-	border-radius: 4px;
-	border: 1px solid transparent;
-	color: white;
-	text-transform: uppercase;
-}
-#submit:hover {
-	background-color: #286090;
 }
 
 #credits {
