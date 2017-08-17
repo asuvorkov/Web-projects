@@ -22,12 +22,49 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="logo">
+        <div class="logo col-md-1">
             <img src="Images/LOGO.png" alt="IMG not found" height="70" style="margin-left: 20px">
         </div>
-        <div class="speed_call">
-            <h2 style="color: #999999">Достойный труд - достойная оплата! <a id="slogan-tel" href="tel:+74957685905">+7
-                (495)-768 59 05</a></h2>
+        <div class="speed_call col-md-11">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4 style="color: #999999; text-align: center">
+                        <a id="slogan-tel" href="tel:+74957685905">+7 (495)-768 59 05 <br>
+
+                            <!-- Small modal -->
+                            <a href="#" id="callback" data-toggle="modal" data-target=".bs-example-modal-sm"><h3
+                                    style="font-size: 12px; color: #ba1212; font-weight: bold">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</h3></a></a>
+
+
+                        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"
+                             aria-labelledby="mySmallModalLabel">
+                            <div class="modal-dialog modal-sm" role="document">
+                                <div class="modal-content">
+
+                                    <form id="form" action="reports.php" method="post">
+                                        <input id="phone" type="text" name="phone" required="required"
+                                               placeholder="Hомер телефона..."/>
+                                        <input id="name" type="text" name="name" required="required"
+                                               placeholder="Имя..."/>
+                                        <br>
+                                        <div><h3 style="font-size: 20px">Оставьте сообщение</h3></div>
+                                        <textarea name="report" id="text" cols="30" rows="10"></textarea>
+                                        <br>
+                                        <input id="submit" type="submit" value="Oставить сообщение"/>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </h4>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <h3 style="text-align: center; color: #999999">Достойный труд - достойная оплата!</h3>
+                </div>
+                <div class="col-md-3">
+                    <button id="test" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Запись на собеседование</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -233,7 +270,8 @@
 <div class="container-fluid">
     <div class="row" id="credits">
         <div class="col-md-offset-4 col-md-4 col-md-offset-4">
-            <a id="andrei" href="https://www.linkedin.com/in/andrei-suvorkov/" target="_blank"><h3>code and design by Andrei Suvorkov</h3></a>
+            <a id="andrei" href="https://www.linkedin.com/in/andrei-suvorkov/" target="_blank"><h3>code and design by
+                Andrei Suvorkov</h3></a>
         </div>
         <br><br><br>
         <div class="col-md-offset-4 col-md-4 col-md-offset-4" id="year">
