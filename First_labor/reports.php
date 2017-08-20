@@ -2,7 +2,7 @@
 
 require 'head.html';
 
-if (isset($_REQEST['submit'])) {
+if (isset($_REQUEST['submit'])) {
 	
 	require_once 'mail.php';	
 
