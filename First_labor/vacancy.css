@@ -33,13 +33,13 @@ body {
 	color: #999999;
 }
 #phone{
+	width: 280px;
 	margin-top: 5px;
-	margin-left: 10px;
+	margin-right: 5px;
 }
 #name {
-	width: 270px;
+	width: 280px;
 	margin-top: 10px;
-	margin-left: 10px;
 }
 #submit {
 	font-size: 12px;
@@ -143,16 +143,6 @@ hr {
 	background-color: #286090;
 	text-transform: uppercase;
 	border-color: #286090;
-}
-
-#phone{
-	margin-top: 5px;
-	margin-left: 10px;
-}
-#name {
-	width: 270px;
-	margin-top: 10px;
-	margin-left: 10px;
 }
 
 #credits {
