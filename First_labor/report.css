@@ -64,13 +64,13 @@ body {
 	text-transform: uppercase;
 }
 
-#test {
+#interview {
 	margin-top: 20px;
 	background-color: #ba1212;
 	text-transform: uppercase;
 	border-color: #ba1212;
 }
-#test:hover {
+#interview:hover {
 	background-color: #286090;
 	text-transform: uppercase;
 	border-color: #286090;

@@ -64,13 +64,13 @@ body {
 	text-transform: uppercase;
 }
 
-#test {
+#interview {
 	margin-top: 20px;
 	background-color: #ba1212;
 	text-transform: uppercase;
 	border-color: #ba1212;
 }
-#test:hover {
+#interview:hover {
 	background-color: #286090;
 	text-transform: uppercase;
 	border-color: #286090;
@@ -133,13 +133,13 @@ hr {
 	height: 2px;
 }
 
-#test {
+#vacancy1, #vacancy2, #vacancy3, #vacancy4, #vacancy5, #vacancy6 {
 	margin-top: 20px;
 	background-color: #ba1212;
 	text-transform: uppercase;
 	border-color: #ba1212;
 }
-#test:hover {
+#vacancy1:hover, #vacancy2:hover, #vacancy3:hover, #vacancy4:hover, #vacancy5:hover, #vacancy6:hover {
 	background-color: #286090;
 	text-transform: uppercase;
 	border-color: #286090;
