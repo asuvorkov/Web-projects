@@ -34,37 +34,17 @@
                     <h4 style="color: #999999; text-align: center">
                         <a id="slogan-tel" href="tel:+74957685905" style="font-size: 20px">+7 (495)-768 59 05 <br>
 
-                            <!-- Small modal -->
-                            <a href="#" id="callback" data-toggle="modal" data-target=".bs-example-modal-sm"><h3
+                            <!-- Large modal -->
+                            <a href="#" id="callback" data-toggle="modal" data-target=".bs-example-modal-lg"><h3
                                     style="font-size: 12px; color: #ba1212; font-weight: bold">ЗАКАЗАТЬ ОБРАТНЫЙ
                                 ЗВОНОК</h3></a></a>
-
-
-                        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"
-                             aria-labelledby="mySmallModalLabel">
-                            <div class="modal-dialog modal-sm" role="document">
-                                <div class="modal-content">
-
-                                    <form id="form" action="mail.php" method="post">
-                                        <input id="phone" type="text" name="phone" required="required"
-                                               placeholder="Hомер телефона..."/>
-                                        <input id="name" type="text" name="name" required="required"
-                                               placeholder="Имя..."/>
-                                        <br>
-                                        <div><h3 style="font-size: 20px">Оставьте сообщение</h3></div>
-                                        <textarea name="report" id="text" cols="30" rows="10"></textarea>
-                                        <br>
-                                        <input id="submit" type="submit" value="Oставить сообщение"/>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
                     </h4>
                     </a>
                 </div>
                 <div class="col-md-3">
+                    <!-- Large modal -->
                     <button id="interview" type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target=".bs-example-modal-sm">Запись на собеседование
+                            data-target=".bs-example-modal-lg">Запись на собеседование
                     </button>
                 </div>
             </div>
@@ -110,7 +90,7 @@
             <h3 style="padding-left: 30%">- Хотите найти стабильную работу рядом с домом <br>
                 - Или Вы хотите работать вахтой <br>
                 - Может быть Вы ищите подработку на выходные <br>
-                - Или вы студен и Вам нужна подработка в вечернее время? <br>
+                - Или вы студент и Вам нужна подработка в вечернее время? <br>
                 Мы поможем Вам в этом вопросе! <br> <br>
             </h3>
         </div>
@@ -255,7 +235,7 @@
                     map: map,
                     position: new google.maps.LatLng(55.78151579999999, 37.653881299999966)
                 });
-                infowindow = new google.maps.InfoWindow({content: '<strong>ООО "Первый трудовой"</strong><br>г. Москва, Комсомольская площадь 3/30, стр.4<br>'});
+                infowindow = new google.maps.InfoWindow({content: '<strong>Первый трудовой</strong><br>г. Москва, Комсомольская площадь 3/30, стр.4<br>'});
                 google.maps.event.addListener(marker, 'click', function () {
                     infowindow.open(map, marker);
                 });
@@ -276,6 +256,65 @@
         <br><br><br>
         <div class="col-md-offset-4 col-md-4 col-md-offset-4" id="year">
             <h5>© 2017 Первый Трудовой</h5>
+        </div>
+    </div>
+</div>
+
+<!-- Large modal -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+            <h3 style="border-radius: 5px 5px 0px 0px; margin-top: 0px; margin-bottom: 0px; margin-right: -0.5px; background-color: #2c2c2c; text-transform: uppercase; color: white; padding-left: 30px; padding-top: 15px; padding-bottom: 15px">Oставить сообщение</h3>
+
+            <div class="container-fluid">
+                <form id="form" action="mail.php" method="post">
+
+                    <div class="container-fluid">
+                        <div class="row" style="padding-top: 20px">
+                            <div class="col-md-5">
+                                <h5 style="color: black">Фамилия, Имя</h5>
+                            </div>
+                            <div class="col-md-7">
+                                <h5 style="color: black">Телефон</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <input id="name" type="text" name="name" required="required" placeholder="Имя..."/>
+                            </div>
+                            <div class="col-md-7">
+                                <input id="phone" type="text" name="phone" required="required" placeholder="Hомер телефона..."/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row" style="padding-top: 20px">
+                            <div class="col-md-12">
+                                <h5 style="color: black; margin-top: 30px">Сообщение</h5>
+                            </div>
+                            <div class="col-md-12">
+                                <textarea name="report" id="text" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row" style="padding-top: 20px">
+                            <div class="col-md-8">
+                                <h5 style="color: black">Заполните, пожалуйста, все поля</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <input id="submit" type="submit" value="Oставить сообщение"/>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
