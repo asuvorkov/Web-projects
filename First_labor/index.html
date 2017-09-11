@@ -52,7 +52,6 @@
     </div>
 </div>
 
-
 <div class="container-fluid">
     <div class="row">
         <div id="main_frame">
@@ -227,13 +226,13 @@
             <script type='text/javascript'>function init_map() {
                 var myOptions = {
                     zoom: 17,
-                    center: new google.maps.LatLng(55.78151579999999, 37.653881299999966),
+                    center: new google.maps.LatLng(55.7818993,37.65255239999993),
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 };
                 map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
                 marker = new google.maps.Marker({
                     map: map,
-                    position: new google.maps.LatLng(55.78151579999999, 37.653881299999966)
+                    position: new google.maps.LatLng(55.7818993,37.65255239999993)
                 });
                 infowindow = new google.maps.InfoWindow({content: '<strong>Первый трудовой</strong><br>г. Москва, Комсомольская площадь 3/30, стр.4<br>'});
                 google.maps.event.addListener(marker, 'click', function () {
@@ -309,7 +308,7 @@
                                 <h5 style="color: black">Заполните, пожалуйста, все поля</h5>
                             </div>
                             <div class="col-md-4">
-                                <input id="submit" type="submit" value="Oставить сообщение"/>
+                                <button id="submit" type="submit" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Oставить сообщение</button>
                             </div>
                         </div>
                     </div>
