@@ -261,7 +261,7 @@
 </div>
 
 <!-- Large modal -->
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+<div id="largeModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
 
@@ -319,6 +319,24 @@
     </div>
 </div>
 
+<!-- Normal modal -->
+<div id="normalModal" class="modal fade " tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success" role="alert">Well done!</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <script>
     $(document).ready(function () {
         // Variable to hold request
@@ -359,6 +377,12 @@
             request.done(function (response, textStatus, jqXHR){
                 // Log a message to the console
                 console.log("Hooray, it worked!");
+                $(function () {
+                    $('#largeModal').modal('toggle');
+                });
+                $(function () {
+                    $('#normalModal').modal('show');
+                });
             });
 
             // Callback handler that will be called on failure
@@ -376,7 +400,6 @@
                 // Reenable the inputs
                 $inputs.prop("disabled", false);
             });
-
         });
     });
 </script>
@@ -384,7 +407,7 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>

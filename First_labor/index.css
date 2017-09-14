@@ -1,7 +1,6 @@
 * {
 	box-sizing: border-box;
 }
-
 .row:after {
 	visibility: hidden;
 	display: block;
@@ -20,7 +19,6 @@ body {
 	margin: 0px;
 	line-height: 1.1;
 }
-
 .logo	{
 	float: left;
 	height: 70px;
@@ -70,7 +68,6 @@ body {
 	background-color: #f5f5f5;
 	text-transform: uppercase;
 }
-
 #interview {
 	margin-top: 20px;
 	background-color: #ba1212;
@@ -82,12 +79,10 @@ body {
 	text-transform: uppercase;
 	border-color: #286090;
 }
-
 h1{
 	text-transform: uppercase;
 	text-align: center;
 }
-
 #main_frame{
 	float: left;
 	min-width: 150px;
@@ -96,7 +91,6 @@ h1{
 	height: 42px;
 	background-color: #2c2c2c;
 }
-
 .main_panel_button {
 	float: right;
 	border: none;
@@ -113,7 +107,6 @@ h1{
 	padding: 13.5px 20px;
 	text-decoration: none;
 }
-
 .social {
 	padding-top: 4px;
 	margin-bottom: -2px;
@@ -121,12 +114,11 @@ h1{
 }
 .social:hover {
 	filter: brightness(0.3);
-
 }
 #main_picture {
 	 background-image: url(Images/main.png);
 	 height: 300px;
- }
+}
 #slogan {
 	width: 150px;
 	font-size: 14px;
@@ -135,7 +127,6 @@ h1{
 	text-align: center;
 	margin-right: 15px;
 }
-
 .about_us{
 	text-align: left;
 	padding-left: 50px;
@@ -146,7 +137,6 @@ h1{
 	padding-left: 50px;
 	padding-right: 50px;
 }
-
 .speed_call_2 {
 	height: 100px;
 	float: left;
@@ -155,7 +145,6 @@ h1{
 	font-size: 20px;
 	color: inherit;
 }
-
 .e-mail {
 	height: 100px;
 	float: left;
@@ -167,15 +156,12 @@ a {
 	font-size: 20px;
 	color: inherit;
 }
-
 .adress {
 	text-align: center;
 }
-
 .footer {
 	color: inherit;
 }
-
 #credits {
 	margin-top: 30px;
 }
@@ -184,7 +170,6 @@ a {
 }
 #andrei:hover {
 	text-decoration: none;
-
 	color: #999999;
 }
 
