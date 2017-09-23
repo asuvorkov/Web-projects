@@ -33,19 +33,25 @@ body {
 	color: #999999;
 }
 #phone{
-	width: 280px;
+	width: 480px;
+	height: 40px;
 	margin-top: 5px;
 	margin-right: 5px;
 }
 #name {
-	width: 280px;
-	margin-top: 10px;
+	width: 350px;
+	height: 40px;
+	margin-top: 5px;
+}
+#text {
+	width: 840px;
+	height: 200px;
+	margin-top: 5px;
 }
 #submit {
 	font-size: 12px;
-	margin-top: 20px;
 	margin-bottom: 5px;
-	width: 160px;
+	width: 200px;
 	height: 35px;
 	background-color: #ba1212;
 	border-radius: 4px;

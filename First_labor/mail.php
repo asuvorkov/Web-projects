@@ -5,6 +5,6 @@ $report = $_REQUEST['report'];
 
 $message = "Tel: " . $phone . "\n\nName: " . $name . "\n\nMessage: " . $report;
 
-mail("Rabota@uvcentre.ru", "Call back", $message, "From: Rabota@uvcentre.ru");
+mail("rabota@uvcentre.ru", "Call back", $message, "From: rabota@uvcentre.ru");
 
 ?>

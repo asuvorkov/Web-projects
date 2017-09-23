@@ -10,13 +10,13 @@
     <title>Вакансии</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="/js/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
@@ -34,37 +34,16 @@
                     <h4 style="color: #999999; text-align: center">
                         <a id="slogan-tel" href="tel:+74957685905" style="font-size: 20px">+7 (495)-768 59 05 <br>
 
-                            <!-- Small modal -->
-                            <a href="#" id="callback" data-toggle="modal" data-target=".bs-example-modal-sm"><h3
+                            <!-- Large modal -->
+                            <a href="#" id="callback" data-toggle="modal" data-target=".bs-example-modal-lg"><h3
                                     style="font-size: 12px; color: #ba1212; font-weight: bold">ЗАКАЗАТЬ ОБРАТНЫЙ
                                 ЗВОНОК</h3></a></a>
-
-
-                        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"
-                             aria-labelledby="mySmallModalLabel">
-                            <div class="modal-dialog modal-sm" role="document">
-                                <div class="modal-content">
-
-                                    <form id="form" action="mail.php" method="post">
-                                        <input id="phone" type="text" name="phone" required="required"
-                                               placeholder="Hомер телефона..."/>
-                                        <input id="name" type="text" name="name" required="required"
-                                               placeholder="Имя..."/>
-                                        <br>
-                                        <div><h3 style="font-size: 20px">Оставьте сообщение</h3></div>
-                                        <textarea name="report" id="text" cols="30" rows="10"></textarea>
-                                        <br>
-                                        <input id="submit" type="submit" value="Oставить сообщение"/>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
                     </h4>
                     </a>
                 </div>
                 <div class="col-md-3">
                     <button id="interview" type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target=".bs-example-modal-sm">Запись на собеседование
+                            data-target=".bs-example-modal-lg">Запись на собеседование
                     </button>
                 </div>
             </div>
@@ -109,7 +88,7 @@
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
                         <button id="vacancy1" type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target=".bs-example-modal-sm">откликнуться
+                                data-target=".bs-example-modal-lg">откликнуться
                         </button>
                     </div>
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
@@ -132,7 +111,7 @@
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
                         <button id="vacancy2" type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target=".bs-example-modal-sm">откликнуться
+                                data-target=".bs-example-modal-lg">откликнуться
                         </button>
                     </div>
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
@@ -162,7 +141,7 @@
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
                         <button id="vacancy3" type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target=".bs-example-modal-sm">откликнуться
+                                data-target=".bs-example-modal-lg">откликнуться
                         </button>
                     </div>
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
@@ -187,7 +166,7 @@
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
                         <button id="vacancy4" type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target=".bs-example-modal-sm">откликнуться
+                                data-target=".bs-example-modal-lg">откликнуться
                         </button>
                     </div>
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
@@ -216,7 +195,7 @@
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
                         <button id="vacancy5" type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target=".bs-example-modal-sm">откликнуться
+                                data-target=".bs-example-modal-lg">откликнуться
                         </button>
                     </div>
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
@@ -242,7 +221,7 @@
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
                         <button id="vacancy6" type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target=".bs-example-modal-sm">откликнуться
+                                data-target=".bs-example-modal-lg">откликнуться
                         </button>
                     </div>
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
@@ -265,9 +244,163 @@
     </div>
 </div>
 
+
+<!-- Large modal -->
+<div id="largeModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+            <h3 style="border-radius: 5px 5px 0px 0px; margin-top: 0px; margin-bottom: 0px; margin-right: -0.5px; background-color: #2c2c2c; text-transform: uppercase; color: white; padding-left: 30px; padding-top: 15px; padding-bottom: 15px">
+                Oставить сообщение</h3>
+
+            <div class="container-fluid">
+                <form id="form" action="mail.php" method="post">
+
+                    <div class="container-fluid">
+                        <div class="row" style="padding-top: 20px">
+                            <div class="col-md-5">
+                                <h5 style="color: black">Фамилия, Имя</h5>
+                            </div>
+                            <div class="col-md-7">
+                                <h5 style="color: black">Телефон</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <input id="name" type="text" name="name" required="required" placeholder="Имя..."/>
+                            </div>
+                            <div class="col-md-7">
+                                <input id="phone" type="text" name="phone" required="required"
+                                       placeholder="Hомер телефона..."/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row" style="padding-top: 20px">
+                            <div class="col-md-12">
+                                <h5 style="color: black; margin-top: 30px">Сообщение</h5>
+                            </div>
+                            <div class="col-md-12">
+                                <textarea name="report" id="text" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row" style="padding-top: 20px">
+                            <div class="col-md-8">
+                                <h5 style="color: black">Заполните, пожалуйста, все поля</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <button id="submit" type="submit" data-toggle="popover" title="Popover title"
+                                        data-content="And here's some amazing content. It's very engaging. Right?">
+                                    Oставить сообщение
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Normal modal -->
+<div id="normalModal" class="modal fade " tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Статус отправки</h4>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success" role="alert">Ваша заявка отправлена успешно! Менеджер свяжется с Вами в
+                    ближайшее время.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script>
+    $(document).ready(function () {
+        // Variable to hold request
+        var request;
+
+        // Bind to the submit event of our form
+        $("#form").submit(function (event) {
+
+            // Prevent default posting of form - put here to work in case of errors
+            event.preventDefault();
+
+            // Abort any pending request
+            if (request) {
+                request.abort();
+            }
+            // setup some local variables
+            var $form = $(this);
+
+            // Let's select and cache all the fields
+            var $inputs = $form.find("input");
+
+            // Serialize the data in the form
+            var serializedData = $form.serialize();
+
+            // Let's disable the inputs for the duration of the Ajax request.
+            // Note: we disable elements AFTER the form data has been serialized.
+            // Disabled form elements will not be serialized.
+            $inputs.prop("disabled", true);
+
+            // Fire off the request to /mail.php
+            request = $.ajax({
+                url: "mail.php",
+                type: "post",
+                data: serializedData
+            });
+
+            // Callback handler that will be called on success
+            request.done(function (response, textStatus, jqXHR) {
+                // Log a message to the console
+                console.log("Hooray, it worked!");
+                $(function () {
+                    $('#largeModal').modal('toggle');
+                });
+                $(function () {
+                    $('#normalModal').modal('show');
+                });
+            });
+
+            // Callback handler that will be called on failure
+            request.fail(function (jqXHR, textStatus, errorThrown) {
+                // Log the error to the console
+                console.error(
+                    "The following error occurred: " +
+                    textStatus, errorThrown
+                );
+            });
+
+            // Callback handler that will be called regardless
+            // if the request failed or succeeded
+            request.always(function () {
+                // Reenable the inputs
+                $inputs.prop("disabled", false);
+            });
+        });
+    });
+</script>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
 </body>
 </html>
