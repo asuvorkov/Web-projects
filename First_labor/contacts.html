@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/png">
+    <title>Первый Трудовой</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="contacts.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="logo col-md-1">
+            <img src="Images/LOGO.png" alt="IMG not found" height="70" style="margin-left: 20px">
+        </div>
+        <div class="speed_call col-md-11">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 style="text-align: center; color: #999999">Достойный труд - достойная оплата!</h3>
+                </div>
+                <div class="col-md-3">
+                    <h4 style="color: #999999; text-align: center">
+                        <a id="slogan-tel" href="tel:+74957685905" style="font-size: 20px">+7 (495)-768 59 05 <br>
+
+                            <!-- Large modal -->
+                            <a href="#" id="callback" data-toggle="modal" data-target=".bs-example-modal-lg"><h3
+                                    style="font-size: 12px; color: #ba1212; font-weight: bold">ЗАКАЗАТЬ ОБРАТНЫЙ
+                                ЗВОНОК</h3></a></a>
+                    </h4>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <!-- Large modal -->
+                    <button id="interview" type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target=".bs-example-modal-lg">Запись на собеседование
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="main_frame">
+            <a href="https://vk.com/1trudovoy" target="_blank"><img class="social" src="Images\VK.png"
+                                                                    alt="https://vk.com/studjob_ru"/></a>
+            <a href="https://ok.ru/profile/585119161352" target="_blank"><img class="social" src="Images\OK.png"
+                                                                              alt="https://ok.ru/profile/585119161352"/></a>
+            <a href="https://www.facebook.com/profile.php?id=100016803555363" target="_blank"><img class="social"
+                                                                                                   src="Images\FB.png"
+                                                                                                   alt="https://www.facebook.com/profile.php?id=100016803555363"/></a>
+        </div>
+        <div class="main_panel">
+            <a class="main_panel_button" href="contacts.html">Контакты</a>
+            <a class="main_panel_button" href="report.html">Отзывы</a>
+            <a class="main_panel_button" href="accommodation.html">Проживание</a>
+            <a class="main_panel_button" href="vacancy.html">Вакансии</a>
+            <a class="main_panel_button" href="index.html">О нас</a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12" style="text-align: center; margin-bottom: 20px;">
+            <h4>
+                График работы: <br>
+                пн – пт: 9:00 - 21:00 <br>
+                сб – вс: 10:00- 20:00 <br>
+            </h4>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6" style="text-align: center">
+            <a href="tel:+74957685905"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                <h3>+7 (495)-768 59 05</h3></a>
+        </div>
+
+        <div class="col-md-6" style="text-align: center">
+            <a href="mailto:rabota@1trudovoy.ru"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                <h3>rabota@1trudovoy.ru</h3></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <h5 class="address">Адрес: г. Москва, Комсомольская площадь 3/30, стр.4</h5>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="map" align="center">
+            <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAWTfJTRjq_oppDi8Of_hAKIaaI0VFH58s'></script>
+            <div style='overflow:hidden;height:400px;width:1000px;'>
+                <div id='gmap_canvas' style='height:400px;width:1000px;'></div>
+                <div>
+                    <small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small>
+                </div>
+                <div>
+                    <small><a href="https://www.zorgverzekeringvergelijken2018.nl/aanvullende-zorgverzekering/">zorgverzekeringvergelijken2018.nl/aanvullende-zorgverzekering/</a>
+                    </small>
+                </div>
+                <style>#gmap_canvas img {
+                    max-width: none !important;
+                    background: none !important
+                }</style>
+            </div>
+            <script type='text/javascript'>function init_map() {
+                var myOptions = {
+                    zoom: 17,
+                    center: new google.maps.LatLng(55.7818993, 37.65255239999993),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                marker = new google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(55.7818993, 37.65255239999993)
+                });
+                infowindow = new google.maps.InfoWindow({content: '<strong>Первый трудовой</strong><br>г. Москва, Комсомольская площадь 3/30, стр.4<br>'});
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
+                infowindow.open(map, marker);
+            }
+            google.maps.event.addDomListener(window, 'load', init_map);</script>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row" id="credits">
+        <div class="col-md-offset-4 col-md-4 col-md-offset-4">
+            <a id="andrei" href="https://www.linkedin.com/in/andrei-suvorkov/" target="_blank"><h3>code and design by
+                Andrei Suvorkov</h3></a>
+        </div>
+        <br><br><br>
+        <div class="col-md-offset-4 col-md-4 col-md-offset-4" id="year">
+            <h5>© 2017 Первый Трудовой</h5>
+        </div>
+    </div>
+</div>
+
+<!-- Large modal -->
+<div id="largeModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+            <h3 style="border-radius: 5px 5px 0px 0px; margin-top: 0px; margin-bottom: 0px; margin-right: -0.5px; background-color: #2c2c2c; text-transform: uppercase; color: white; padding-left: 30px; padding-top: 15px; padding-bottom: 15px">
+                Oставить сообщение</h3>
+
+            <div class="container-fluid">
+                <form id="form" action="mail.php" method="post">
+
+                    <div class="container-fluid">
+                        <div class="row" style="padding-top: 20px">
+                            <div class="col-md-5">
+                                <h5 style="color: black">Фамилия, Имя</h5>
+                            </div>
+                            <div class="col-md-7">
+                                <h5 style="color: black">Телефон</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <input id="name" type="text" name="name" required="required" placeholder="Имя..."/>
+                            </div>
+                            <div class="col-md-7">
+                                <input id="phone" type="text" name="phone" required="required"
+                                       placeholder="Hомер телефона..."/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row" style="padding-top: 20px">
+                            <div class="col-md-12">
+                                <h5 style="color: black; margin-top: 30px">Сообщение</h5>
+                            </div>
+                            <div class="col-md-12">
+                                <textarea name="report" id="text" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row" style="padding-top: 20px">
+                            <div class="col-md-8">
+                                <h5 style="color: black">Заполните, пожалуйста, все поля</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <button id="submit" type="submit" data-toggle="popover" title="Popover title"
+                                        data-content="And here's some amazing content. It's very engaging. Right?">
+                                    Oставить сообщение
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Normal modal -->
+<div id="normalModal" class="modal fade " tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Статус отправки</h4>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success" role="alert">Ваша заявка отправлена успешно! Менеджер свяжется с Вами в
+                    ближайшее время.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script>
+    $(document).ready(function () {
+        // Variable to hold request
+        var request;
+
+        // Bind to the submit event of our form
+        $("#form").submit(function (event) {
+
+            // Prevent default posting of form - put here to work in case of errors
+            event.preventDefault();
+
+            // Abort any pending request
+            if (request) {
+                request.abort();
+            }
+            // setup some local variables
+            var $form = $(this);
+
+            // Let's select and cache all the fields
+            var $inputs = $form.find("input");
+
+            // Serialize the data in the form
+            var serializedData = $form.serialize();
+
+            // Let's disable the inputs for the duration of the Ajax request.
+            // Note: we disable elements AFTER the form data has been serialized.
+            // Disabled form elements will not be serialized.
+            $inputs.prop("disabled", true);
+
+            // Fire off the request to /mail.php
+            request = $.ajax({
+                url: "mail.php",
+                type: "post",
+                data: serializedData
+            });
+
+            // Callback handler that will be called on success
+            request.done(function (response, textStatus, jqXHR) {
+                // Log a message to the console
+                console.log("Hooray, it worked!");
+                $(function () {
+                    $('#largeModal').modal('toggle');
+                });
+                $(function () {
+                    $('#normalModal').modal('show');
+                });
+            });
+
+            // Callback handler that will be called on failure
+            request.fail(function (jqXHR, textStatus, errorThrown) {
+                // Log the error to the console
+                console.error(
+                    "The following error occurred: " +
+                    textStatus, errorThrown
+                );
+            });
+
+            // Callback handler that will be called regardless
+            // if the request failed or succeeded
+            request.always(function () {
+                // Reenable the inputs
+                $inputs.prop("disabled", false);
+            });
+        });
+    });
+</script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -19,7 +19,6 @@
 body {
 	margin: 0px;
 }
-
 .logo	{
 	float: left;
 	height: 70px;
@@ -69,7 +68,6 @@ body {
 	background-color: #f5f5f5;
 	text-transform: uppercase;
 }
-
 #interview {
 	margin-top: 20px;
 	background-color: #ba1212;
@@ -81,12 +79,22 @@ body {
 	text-transform: uppercase;
 	border-color: #286090;
 }
-
+#main_frame{
+	float: left;
+	min-width: 150px;
+}
+.social {
+	padding-top: 4px;
+	margin-bottom: -2px;
+	padding-left: 10px;
+}
+.social:hover {
+	filter: brightness(0.3);
+}
 .main_panel {
 	height: 42px;
 	background-color: #2c2c2c;
 }
-
 .main_panel_button {
 	float: right;
 	border: none;
@@ -106,35 +114,29 @@ body {
 body{
 	line-height: 1.1;
 }
-
 h1{
 	text-transform: uppercase;
 	text-align: center;
 	color: #999999;
 }
-
 .report {
 	padding-right: 100px;
 	padding-left: 100px;
 }
-
 hr {
 	border: none;
 	background-color: #7f7070;
 	color: #7f7070;
 	height: 2px;
 }
-
 .btn {
 	text-transform: uppercase;
 	background-color: #ba1212;
 }
-
 #pre_text {
 	margin-left: 10px;
 	margin-top: 45px;
 }
-
 #credits {
 	margin-top: 30px;
 }
