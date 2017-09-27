@@ -127,39 +127,9 @@ h1{
     text-transform: uppercase;
     text-align: center;
 }
-.vacancy {
-    background-color: #f5f5f5;
-    margin-bottom: 20px;
-}
 h2 {
     text-transform: uppercase;
     text-align: center;
-}
-.description {
-    height: 400px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.report {
-    padding-right: 100px;
-    padding-left: 100px;
-}
-hr {
-    border: none;
-    background-color: #7f7070;
-    color: #7f7070;
-    height: 2px;
-}
-#vacancy1, #vacancy2, #vacancy3, #vacancy4, #vacancy5, #vacancy6 {
-    margin-top: 20px;
-    background-color: #ba1212;
-    text-transform: uppercase;
-    border-color: #ba1212;
-}
-#vacancy1:hover, #vacancy2:hover, #vacancy3:hover, #vacancy4:hover, #vacancy5:hover, #vacancy6:hover {
-    background-color: #286090;
-    text-transform: uppercase;
-    border-color: #286090;
 }
 #credits {
     margin-top: 30px;
@@ -170,4 +140,11 @@ hr {
 #andrei:hover {
     text-decoration: none;
     color: #bcd0c9;
+}
+#creator{
+    color: #2c2c2c
+}
+#creator:hover{
+    text-decoration: none;
+    color: #999999;
 }

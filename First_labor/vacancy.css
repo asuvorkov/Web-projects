@@ -167,7 +167,10 @@ hr {
 #andrei, #year {
 	text-align: center;
 }
-#andrei:hover {
+#creator{
+	color: #2c2c2c
+}
+#creator:hover{
 	text-decoration: none;
-	color: #bcd0c9;
+	color: #999999;
 }

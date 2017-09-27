@@ -157,6 +157,13 @@ hr {
 	text-decoration: none;
 	color: #bcd0c9;
 }
+#creator{
+	color: #2c2c2c
+}
+#creator:hover{
+	text-decoration: none;
+	color: #999999;
+}
 
 
 
