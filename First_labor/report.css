@@ -79,6 +79,16 @@ body {
 	text-transform: uppercase;
 	border-color: #286090;
 }
+#disabled{
+	margin-top: 0.6px;
+	padding: 0;
+	padding-left: 20px;
+}
+#disabled:hover{
+	padding-top: 0.5px;
+	padding-bottom: 0.5px;
+	margin-top: 0.2px;
+}
 #main_frame{
 	float: left;
 	min-width: 150px;

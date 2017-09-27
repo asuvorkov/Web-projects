@@ -107,6 +107,16 @@ h1{
 	padding: 13.5px 20px;
 	text-decoration: none;
 }
+#disabled{
+	margin-top: 0.6px;
+	padding: 0;
+	padding-left: 20px;
+}
+#disabled:hover{
+	padding-top: 0.5px;
+	padding-bottom: 0.5px;
+	margin-top: 0.2px;
+}
 .social {
 	padding-top: 4px;
 	margin-bottom: -2px;

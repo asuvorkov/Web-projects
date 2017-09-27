@@ -67,6 +67,7 @@
             <a class="main_panel_button" href="contacts.html">Контакты</a>
             <a class="main_panel_button" href="report.html">Отзывы</a>
             <a class="main_panel_button" href="accommodation.html">Проживание</a>
+            <a id="disabled" class="main_panel_button" href="disabled.html">Вакансии<img src="Images/disabled.png" alt="no pic" style="padding: 0; margin: 0;"></a>
             <a class="main_panel_button" href="vacancy.html">Вакансии</a>
             <a class="main_panel_button" href="#">О нас</a>
         </div>
@@ -194,53 +195,6 @@
         </div>
         <div class="e-mail">
             <a href="mailto:rabota@1trudovoy.ru"><h3>rabota@1trudovoy.ru</h3></a>
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid">
-    <div class="row">
-        <h5 class="address">Адрес: г. Москва, Комсомольская площадь 3/30, стр.4</h5>
-    </div>
-</div>
-
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="map" align="center">
-            <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAWTfJTRjq_oppDi8Of_hAKIaaI0VFH58s'></script>
-            <div style='overflow:hidden;height:400px;width:1000px;'>
-                <div id='gmap_canvas' style='height:400px;width:1000px;'></div>
-                <div>
-                    <small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small>
-                </div>
-                <div>
-                    <small><a href="https://www.zorgverzekeringvergelijken2018.nl/aanvullende-zorgverzekering/">zorgverzekeringvergelijken2018.nl/aanvullende-zorgverzekering/</a>
-                    </small>
-                </div>
-                <style>#gmap_canvas img {
-                    max-width: none !important;
-                    background: none !important
-                }</style>
-            </div>
-            <script type='text/javascript'>function init_map() {
-                var myOptions = {
-                    zoom: 17,
-                    center: new google.maps.LatLng(55.7818993,37.65255239999993),
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
-                map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-                marker = new google.maps.Marker({
-                    map: map,
-                    position: new google.maps.LatLng(55.7818993,37.65255239999993)
-                });
-                infowindow = new google.maps.InfoWindow({content: '<strong>Первый трудовой</strong><br>г. Москва, Комсомольская площадь 3/30, стр.4<br>'});
-                google.maps.event.addListener(marker, 'click', function () {
-                    infowindow.open(map, marker);
-                });
-                infowindow.open(map, marker);
-            }
-            google.maps.event.addDomListener(window, 'load', init_map);</script>
         </div>
     </div>
 </div>
