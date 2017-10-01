@@ -5,7 +5,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107130563-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)};
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        ;
         gtag('js', new Date());
 
         gtag('config', 'UA-107130563-1');
@@ -77,7 +80,9 @@
             <a class="main_panel_button" href="contacts.html">Контакты</a>
             <a class="main_panel_button" href="report.html">Отзывы</a>
             <a class="main_panel_button" href="accommodation.html">Проживание</a>
-            <a id="disabled" class="main_panel_button" href="disabled.html">Вакансии<img src="Images/disabled.png" alt="no pic" style="padding: 0; margin: 0;"></a>
+            <a id="disabled" class="main_panel_button" href="disabled.html">Вакансии<img src="Images/disabled.png"
+                                                                                         alt="no pic"
+                                                                                         style="padding: 0; margin: 0;"></a>
             <a class="main_panel_button" href="vacancy.html">Вакансии</a>
             <a class="main_panel_button" href="#">О нас</a>
         </div>
@@ -111,13 +116,13 @@
     <div class="row">
         <div class="about_us_2">
             <div class="col-md-4">
-                <img src="Images/about_us/money.png" alt="picture not aviable">
+                <img src="Images/about_us/money.png" alt="picture not available">
             </div>
             <div class="col-md-4">
-                <img src="Images/about_us/house.png" alt="picture not aviable">
+                <img src="Images/about_us/house.png" alt="picture not available">
             </div>
             <div class="col-md-4">
-                <img src="Images/about_us/business.png" alt="picture not aviable">
+                <img src="Images/about_us/business.png" alt="picture not available">
             </div>
         </div>
     </div>
@@ -128,22 +133,24 @@
         <div class="about_us_2">
             <div class="col-md-4">
                 <h4 style="text-align: left">
-                    Мы не берем денег за трудоустройство и поиск места проживания!
-                    Выплаты зарплаты производятся 4 раза в месяц.
-                    Работникам вахтового метода еженедельно выплачиваются авансы. <br>
+                    Выплата заработной платы производится каждую неделю. Для вахты предусмотрены еженедельные авансы.
+                    Суммы авансов обсуждаемы и могут корректироваться в зависимости от потребностей.Итоговый расчет по
+                    вахте производится сразу по ее окончанию, без задержек.
                 </h4>
             </div>
             <div class="col-md-4">
                 <h4 style="text-align: left">
-                    Мы постоянно ищем улучшаем качество проживания наших сотрудников.
-                    Свободный график работ, выбирай удобные для себя дни и время работы!
+                    Мы ищем и подбираем наиболее комфортные места проживания для наших сотрудников. Все общежития
+                    находятся в шаговой доступности от работы. В комнатах проживает от 2 до 6 сотрудников
+                    одновременно. Большинство общежитий оборудовано бесплатным WiFi.
                 </h4>
             </div>
             <div class="col-md-4">
                 <h4 style="text-align: left">
-                    Расчет с вахтой производится на следующий день после ее окончания, никаких задержек!
-                    Мы являемся прямым работодателем!
-                    В нашей компании перспектива карьерного роста реальна! <br>
+                    Мы не берем денег за трудоустройство и подбор места проживания. Мы являемся прямым
+                    работодателем. Оформление согласно ТК РФ. Обучаем работе сами и самое главное - бесплатно. Вы можете
+                    приступить к работе сразу на следующий день после оформления. В нашей компании перспектива карьерного
+                    роста реальна!
                 </h4>
             </div>
         </div>
@@ -157,13 +164,13 @@
     <div class="row">
         <div class="about_us_2">
             <div class="col-md-4">
-                <img src="Images/about_us/phone.png" alt="picture not aviable">
+                <img src="Images/about_us/phone.png" alt="picture not available">
             </div>
             <div class="col-md-4">
-                <img src="Images/about_us/order.png" alt="picture not aviable">
+                <img src="Images/about_us/order.png" alt="picture not available">
             </div>
             <div class="col-md-4">
-                <img src="Images/about_us/gconfeditor.png" alt="picture not aviable">
+                <img src="Images/about_us/gconfeditor.png" alt="picture not available">
             </div>
         </div>
     </div>
@@ -228,7 +235,8 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
 
-            <h3 style="border-radius: 5px 5px 0px 0px; margin-top: 0px; margin-bottom: 0px; margin-right: -0.5px; background-color: #2c2c2c; text-transform: uppercase; color: white; padding-left: 30px; padding-top: 15px; padding-bottom: 15px">Oставить сообщение</h3>
+            <h3 style="border-radius: 5px 5px 0px 0px; margin-top: 0px; margin-bottom: 0px; margin-right: -0.5px; background-color: #2c2c2c; text-transform: uppercase; color: white; padding-left: 30px; padding-top: 15px; padding-bottom: 15px">
+                Oставить сообщение</h3>
 
             <div class="container-fluid">
                 <form id="form" action="mail.php" method="post">
@@ -250,7 +258,8 @@
                                 <input id="name" type="text" name="name" required="required" placeholder="Имя..."/>
                             </div>
                             <div class="col-md-7">
-                                <input id="phone" type="text" name="phone" required="required" placeholder="Hомер телефона..."/>
+                                <input id="phone" type="text" name="phone" required="required"
+                                       placeholder="Hомер телефона..."/>
                             </div>
                         </div>
                     </div>
@@ -272,7 +281,10 @@
                                 <h5 style="color: black">Заполните, пожалуйста, все поля</h5>
                             </div>
                             <div class="col-md-4">
-                                <button id="submit" type="submit" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Oставить сообщение</button>
+                                <button id="submit" type="submit" data-toggle="popover" title="Popover title"
+                                        data-content="And here's some amazing content. It's very engaging. Right?">
+                                    Oставить сообщение
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -287,11 +299,14 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title">Статус отправки</h4>
             </div>
             <div class="modal-body">
-                <div class="alert alert-success" role="alert">Ваша заявка отправлена успешно! Менеджер свяжется с Вами в ближайшее время.</div>
+                <div class="alert alert-success" role="alert">Ваша заявка отправлена успешно! Менеджер свяжется с Вами в
+                    ближайшее время.
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
@@ -306,7 +321,7 @@
         var request;
 
         // Bind to the submit event of our form
-        $("#form").submit(function(event){
+        $("#form").submit(function (event) {
 
             // Prevent default posting of form - put here to work in case of errors
             event.preventDefault();
@@ -337,7 +352,7 @@
             });
 
             // Callback handler that will be called on success
-            request.done(function (response, textStatus, jqXHR){
+            request.done(function (response, textStatus, jqXHR) {
                 // Log a message to the console
                 console.log("Hooray, it worked!");
                 $(function () {
@@ -349,10 +364,10 @@
             });
 
             // Callback handler that will be called on failure
-            request.fail(function (jqXHR, textStatus, errorThrown){
+            request.fail(function (jqXHR, textStatus, errorThrown) {
                 // Log the error to the console
                 console.error(
-                    "The following error occurred: "+
+                    "The following error occurred: " +
                     textStatus, errorThrown
                 );
             });
