@@ -76,6 +76,8 @@
                 <a href="https://www.facebook.com/profile.php?id=100016803555363" target="_blank"><img class="social"
                                                                                                        src="Images\FB.png"
                                                                                                        alt="https://www.facebook.com/profile.php?id=100016803555363"/></a>
+                <a href="https://www.avito.ru/1trudovoy" target="_blank"><img class="social" src="Images/avito.jpg"
+                                                                              alt="https://www.avito.ru/1trudovoy"/></a>
             </div>
             <div class="main_panel">
                 <a class="main_panel_button" href="contacts.html">Контакты</a>
@@ -111,16 +113,16 @@
 </div>
 
 
-
-
 <!-- Large modal -->
 <div class="container-fluid">
     <div class="row">
         <div class=" col-md-offset-3 col-md-6 col-md-offset-3 text-center">
-            <button type="button" id="more_reports" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+            <button type="button" id="more_reports" data-loading-text="Loading..." class="btn btn-primary"
+                    autocomplete="off">
                 Больше отзывов
             </button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
+            <button id="add_report_btn" type="button" class="btn btn-primary" data-toggle="modal"
+                    data-target="#add_report">
                 оставить отзыв
             </button>
         </div>
@@ -224,6 +226,46 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
             </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Add a new report modal -->
+<div id="add_report" class="modal fade " tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header"
+                 style="border-radius: 5px 5px 0px 0px; margin-top: 0px; margin-bottom: 0px; margin-right: -0.5px; background-color: #2c2c2c; text-transform: uppercase; color: white; padding-left: 30px; padding-top: 15px; padding-bottom: 15px">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Оставить отзыв</h4>
+            </div>
+            <form id="add_report_form" action="add_report.php" method="post">
+                <div class="modal-body">
+                    <p><label for="report_name" style="margin-bottom: 5px">Имя</label> <br>
+                        <input id="report_name" style="width: 50%" type="text" name="name" required="required"
+                               placeholder="имя..."/>
+                        <input id="report_date" style="width: 40%; visibility: hidden;" type="text">
+                    </p>
+
+                    <label for="report_message" style="margin-top: 20px; margin-bottom: 5px">Отзыв</label> <br>
+                    <textarea id="report_message" name="message" placeholder="отзыв..."></textarea>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 style="color: black; text-align: left">Заполните, пожалуйста, все поля</h5>
+                        </div>
+                        <div class="col-md-6">
+                            <button id="report_submit" type="submit" data-toggle="popover" title="Popover title"
+                                    data-content="And here's some amazing content. It's very engaging. Right?">
+                                Oставить отзыв
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
@@ -346,9 +388,10 @@
         $.getJSON('reports.json', function (data) {
 
             for (var i = Maximum.CurrentMax; i < Maximum.CurrentMax + 10; i++) {
-                if (i > data.reports.length) {    } else {
-                    if (i === data.reports.length){
-                        $( "#more_reports" ).before( $( '<div class="alert alert-warning" role="alert">Отзывов больше нет, хотите оставить свой отзыв?</div>' ) );
+                if (i > data.reports.length) {
+                } else {
+                    if (i === data.reports.length) {
+                        $("#more_reports").before($('<div class="alert alert-warning" role="alert">Отзывов больше нет, хотите оставить свой отзыв?</div>'));
 
                     } else {
                         $(".report-block:first").clone().appendTo(".wrapper:last");
@@ -362,6 +405,85 @@
         });
         $btn.button('reset')
     })
+</script>
+
+<script>
+    $('#add_report_btn').on('click', function () {
+        var $btn = $(this).button('loading')
+        // business logic...
+        $("#report_date").val(GetTodayDate);
+        $btn.button('reset')
+    })
+</script>
+
+<script>
+    $(document).ready(function () {
+        // Variable to hold request
+        var request;
+
+        // Bind to the submit event of our form
+        $("#add_report_form").submit(function (event) {
+            var $btn = $('#report_submit').button('loading')
+            // business logic...
+
+            // Prevent default posting of form - put here to work in case of errors
+            event.preventDefault();
+
+            // Abort any pending request
+            if (request) {
+                request.abort();
+            }
+            // setup some local variables
+            var $form = $(this);
+
+            // Let's select and cache all the fields
+            var $inputs = $form.find("input");
+
+            // Serialize the data in the form
+            var serializedData = $form.serialize();
+
+            // Let's disable the inputs for the duration of the Ajax request.
+            // Note: we disable elements AFTER the form data has been serialized.
+            // Disabled form elements will not be serialized.
+            $inputs.prop("disabled", true);
+
+            // Fire off the request to /mail.php
+            request = $.ajax({
+                url: "add_report.php",
+                type: "post",
+                data: serializedData
+            });
+
+            // Callback handler that will be called on success
+            request.done(function (response, textStatus, jqXHR) {
+                // Log a message to the console
+                console.log("Hooray, it worked!");
+                $btn.button('reset')
+                $(function () {
+                    $('#add_report').modal('toggle');
+                });
+                $(function () {
+                    $('#normalModal').modal('show');
+                });
+            });
+
+            // Callback handler that will be called on failure
+            request.fail(function (jqXHR, textStatus, errorThrown) {
+                // Log the error to the console
+                console.error(
+                    "The following error occurred: " +
+                    textStatus, errorThrown
+                );
+            });
+
+            // Callback handler that will be called regardless
+            // if the request failed or succeeded
+            request.always(function () {
+                // Reenable the inputs
+                $inputs.prop("disabled", false);
+            });
+        });
+    });
 </script>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
