@@ -242,10 +242,19 @@
             </div>
             <form id="add_report_form" action="add_report.php" method="post">
                 <div class="modal-body">
-                    <p><label for="report_name" style="margin-bottom: 5px">Имя</label> <br>
-                        <input id="report_name" style="width: 50%" type="text" name="name" required="required"
-                               placeholder="имя..."/>
-                        <input id="report_date" style="width: 40%; visibility: hidden;" type="text">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="report_name" style="margin-bottom: 5px">Имя</label> <br>
+                            <input id="report_name" style="width: 100%" type="text" name="name" required="required"
+                                   placeholder="имя..."/>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="report_name" style="margin-bottom: 5px">Дата</label> <br>
+                            <input id="report_date" style="width: 100%" type="text" readonly>
+                        </div>
+                    </div>
+                    <p>
+
                     </p>
 
                     <label for="report_message" style="margin-top: 20px; margin-bottom: 5px">Отзыв</label> <br>

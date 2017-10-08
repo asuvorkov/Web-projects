@@ -8,7 +8,7 @@ $extra_data = array(
     'date' => $_POST["date"],
     'message' => $_POST["message"]
 );
-array_unshift($array_data[0], $extra_data);
+array_unshift($array_data['reports'], $extra_data);
 $final_data = json_encode($array_data);
 file_put_contents( 'reports.json', $final_data );
 ?>
