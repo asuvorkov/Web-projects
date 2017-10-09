@@ -69,6 +69,7 @@ body {
 	text-transform: uppercase;
 }
 #interview {
+	position: relative;
 	margin-top: 20px;
 	background-color: #ba1212;
 	text-transform: uppercase;
@@ -129,14 +130,6 @@ h1{
 	 background-image: url(Images/main.png);
 	 height: 300px;
 }
-#slogan {
-	width: 150px;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: red;
-	text-align: center;
-	margin-right: 15px;
-}
 .about_us{
 	text-align: left;
 	padding-left: 50px;
@@ -182,6 +175,26 @@ a {
 	text-decoration: none;
 	color: #999999;
 }
-
+@media (max-width: 450px) {
+	#slogan{
+		font-size: 15px;
+	}
+}
+@media (max-width: 920px) {
+	.navigation{
+		display: none;
+	}
+	.navigation-mini{
+		display: block;
+	}
+}
+@media (min-width: 921px) {
+	.navigation{
+		display: block;
+	}
+	.navigation-mini{
+		display: none;
+	}
+}
 
 

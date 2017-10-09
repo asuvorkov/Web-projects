@@ -35,58 +35,74 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="logo col-md-1">
+        <div class="logo col-md-2 col-sm-3 col-xs-4">
             <img src="Images/LOGO.png" alt="IMG not found" height="70" style="margin-left: 20px">
         </div>
-        <div class="speed_call col-md-11">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3 style="text-align: center; color: #999999">Достойный труд - достойная оплата!</h3>
-                </div>
-                <div class="col-md-3">
-                    <h4 style="color: #999999; text-align: center">
-                        <a id="slogan-tel" href="tel:+74957685905" style="font-size: 20px">+7 (495)768 59 05 <br>
+        <div class="col-md-4 col-sm-9 col-xs-8 speed_call">
+            <h3 id="slogan" style="text-align: center; color: #999999">Достойный труд - достойная оплата!</h3>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 speed_call">
+            <h4 style="color: #999999; text-align: center">
+                <a id="slogan-tel" href="tel:+74957685905" style="font-size: 20px">+7 (495)768 59 05 <br>
 
-                            <!-- Large modal -->
-                            <a href="#" id="callback" data-toggle="modal" data-target=".bs-example-modal-lg"><h3
-                                    style="font-size: 12px; color: #ba1212; font-weight: bold">ЗАКАЗАТЬ ОБРАТНЫЙ
-                                ЗВОНОК</h3></a></a>
-                    </h4>
-                    </a>
-                </div>
-                <div class="col-md-3">
                     <!-- Large modal -->
-                    <button id="interview" type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target=".bs-example-modal-lg">Запись на собеседование
-                    </button>
-                </div>
-            </div>
+                    <a href="#" id="callback" data-toggle="modal" data-target=".bs-example-modal-lg"><h3
+                            style="font-size: 12px; color: #ba1212; font-weight: bold">ЗАКАЗАТЬ ОБРАТНЫЙ
+                        ЗВОНОК</h3></a></a>
+            </h4>
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 speed_call" style="text-align: center">
+            <!-- Large modal -->
+            <button id="interview" type="button" class="btn btn-primary" data-toggle="modal"
+                    data-target=".bs-example-modal-lg">Запись на собеседование
+            </button>
         </div>
     </div>
 </div>
 
 <div class="container-fluid">
-    <div class="row">
-        <div id="main_frame">
-            <a href="https://vk.com/1trudovoy" target="_blank"><img class="social" src="Images\VK.png"
-                                                                    alt="https://vk.com/1trudovoy"/></a>
-            <a href="https://ok.ru/profile/585119161352" target="_blank"><img class="social" src="Images\OK.png"
-                                                                              alt="https://ok.ru/profile/585119161352"/></a>
-            <a href="https://www.facebook.com/profile.php?id=100016803555363" target="_blank"><img class="social"
-                                                                                                   src="Images\FB.png"
-                                                                                                   alt="https://www.facebook.com/profile.php?id=100016803555363"/></a>
-            <a href="https://www.avito.ru/1trudovoy" target="_blank"><img class="social" src="Images/avito.jpg"
-                                                                    alt="https://www.avito.ru/1trudovoy"/></a>
+    <div class="row main_panel">
+        <div class="col-md-3">
+            <div id="main_frame">
+                <a href="https://vk.com/1trudovoy" target="_blank"><img class="social" src="Images\VK.png"
+                                                                        alt="https://vk.com/1trudovoy"/></a>
+                <a href="https://ok.ru/profile/585119161352" target="_blank"><img class="social" src="Images\OK.png"
+                                                                                  alt="https://ok.ru/profile/585119161352"/></a>
+                <a href="https://www.facebook.com/profile.php?id=100016803555363" target="_blank"><img class="social"
+                                                                                                       src="Images\FB.png"
+                                                                                                       alt="https://www.facebook.com/profile.php?id=100016803555363"/></a>
+                <a href="https://www.avito.ru/1trudovoy" target="_blank"><img class="social" src="Images/avito.jpg"
+                                                                              alt="https://www.avito.ru/1trudovoy"/></a>
+            </div>
         </div>
-        <div class="main_panel">
-            <a class="main_panel_button" href="contacts.html">Контакты</a>
-            <a class="main_panel_button" href="report.html">Отзывы</a>
-            <a class="main_panel_button" href="accommodation.html">Проживание</a>
-            <a id="disabled" class="main_panel_button" href="disabled.html">Вакансии<img src="Images/disabled.png"
-                                                                                         alt="no pic"
-                                                                                         style="padding: 0; margin: 0;"></a>
-            <a class="main_panel_button" href="vacancy.html">Вакансии</a>
-            <a class="main_panel_button" href="#">О нас</a>
+        <div class="col-md-9">
+            <div class="navigation">
+                <a class="main_panel_button" href="contacts.html">Контакты</a>
+                <a class="main_panel_button" href="report.html">Отзывы</a>
+                <a class="main_panel_button" href="accommodation.html">Проживание</a>
+                <a id="disabled" class="main_panel_button" href="disabled.html">Вакансии<img src="Images/disabled.png"
+                                                                                             alt="no pic"
+                                                                                             style="padding: 0; margin: 0;"></a>
+                <a class="main_panel_button" href="vacancy.html">Вакансии</a>
+                <a class="main_panel_button" href="#">О нас</a>
+            </div>
+            <div class="navigation-mini" style="text-align: right; margin-top: 3px">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Меню
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="vacancy.html">Вакансии</a></li>
+                        <li><a href="disabled.html">Вакансии<img src="Images/disabled-responsive.png" alt="no pic"></a></li>
+                        <li><a href="accommodation.html">Проживание</a></li>
+                        <li><a href="report.html">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -110,7 +126,8 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1" style="padding-right: 0px">
-                                    <img src="Images/tick.png" alt="no img" class="img-responsive center-block" style="margin-top: 5px">
+                                    <img src="Images/tick.png" alt="no img" class="img-responsive center-block"
+                                         style="margin-top: 5px">
                                 </div>
                                 <div class="col-md-11" style="padding-left: 0px">
                                     Хотите найти стабильную работу рядом с домом <br>
@@ -118,7 +135,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-1" style="padding-right: 0px">
-                                    <img src="Images/tick.png" alt="no img" class="img-responsive center-block" style="margin-top: 5px">
+                                    <img src="Images/tick.png" alt="no img" class="img-responsive center-block"
+                                         style="margin-top: 5px">
                                 </div>
                                 <div class="col-md-11" style="padding-left: 0px">
                                     Или Вы хотите работать вахтой <br>
@@ -128,7 +146,8 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-1" style="padding-right: 0px">
-                                    <img src="Images/tick.png" alt="no img" class="img-responsive center-block" style="margin-top: 5px">
+                                    <img src="Images/tick.png" alt="no img" class="img-responsive center-block"
+                                         style="margin-top: 5px">
                                 </div>
                                 <div class="col-md-11" style="padding-left: 0px">
                                     Может быть Вы ищите подработку на выходные <br>
@@ -136,7 +155,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-1" style="padding-right: 0px">
-                                    <img src="Images/tick.png" alt="no img" class="img-responsive center-block" style="margin-top: 5px">
+                                    <img src="Images/tick.png" alt="no img" class="img-responsive center-block"
+                                         style="margin-top: 5px">
                                 </div>
                                 <div class="col-md-11" style="padding-left: 0px">
                                     Или Вы студент и Вам нужна подработка в вечернее время <br>
@@ -174,8 +194,10 @@
         <div class="about_us_2">
             <div class="col-md-4">
                 <h4 style="text-align: left">
-                    Выплата заработной платы производится каждую неделю. <br> Для вахты предусмотрены еженедельные авансы. <br>
-                    Суммы авансов обсуждаемы и могут корректироваться в зависимости от потребностей. <br> Итоговый расчет по
+                    Выплата заработной платы производится каждую неделю. <br> Для вахты предусмотрены еженедельные
+                    авансы. <br>
+                    Суммы авансов обсуждаемы и могут корректироваться в зависимости от потребностей. <br> Итоговый
+                    расчет по
                     вахте производится сразу по ее окончанию, без задержек.
                 </h4>
             </div>
@@ -189,8 +211,10 @@
             <div class="col-md-4">
                 <h4 style="text-align: left">
                     Мы не берем денег за трудоустройство и подбор места проживания. <br> Мы являемся прямым
-                    работодателем. <br> Оформление согласно ТК РФ. <br> Обучаем работе сами и самое главное - бесплатно. <br> Вы можете
-                    приступить к работе сразу на следующий день после оформления. <br> В нашей компании перспектива карьерного
+                    работодателем. <br> Оформление согласно ТК РФ. <br> Обучаем работе сами и самое главное - бесплатно.
+                    <br> Вы можете
+                    приступить к работе сразу на следующий день после оформления. <br> В нашей компании перспектива
+                    карьерного
                     роста реальна!
                 </h4>
             </div>
