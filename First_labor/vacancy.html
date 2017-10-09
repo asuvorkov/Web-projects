@@ -32,41 +32,38 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="logo col-md-1">
+        <div class="logo col-md-2 col-sm-3 col-xs-4">
             <img src="Images/LOGO.png" alt="IMG not found" height="70" style="margin-left: 20px">
         </div>
-        <div class="speed_call col-md-11">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3 style="text-align: center; color: #999999">Достойный труд - достойная оплата!</h3>
-                </div>
-                <div class="col-md-3">
-                    <h4 style="color: #999999; text-align: center">
-                        <a id="slogan-tel" href="tel:+74957685905" style="font-size: 20px">+7 (495)768 59 05 <br>
+        <div class="col-md-4 col-sm-9 col-xs-8 speed_call">
+            <h3 id="slogan" style="text-align: center; color: #999999">Достойный труд - достойная оплата!</h3>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 speed_call">
+            <h4 style="color: #999999; text-align: center">
+                <a id="slogan-tel" href="tel:+74957685905" style="font-size: 20px">+7 (495)768 59 05 <br>
 
-                            <!-- Large modal -->
-                            <a href="#" id="callback" data-toggle="modal" data-target=".bs-example-modal-lg"><h3
-                                    style="font-size: 12px; color: #ba1212; font-weight: bold">ЗАКАЗАТЬ ОБРАТНЫЙ
-                                ЗВОНОК</h3></a></a>
-                    </h4>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <button id="interview" type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target=".bs-example-modal-lg">Запись на собеседование
-                    </button>
-                </div>
-            </div>
+                    <!-- Large modal -->
+                    <a href="#" id="callback" data-toggle="modal" data-target=".bs-example-modal-lg"><h3
+                            style="font-size: 12px; color: #ba1212; font-weight: bold">ЗАКАЗАТЬ ОБРАТНЫЙ
+                        ЗВОНОК</h3></a></a>
+            </h4>
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 speed_call" style="text-align: center">
+            <!-- Large modal -->
+            <button id="interview" type="button" class="btn btn-primary" data-toggle="modal"
+                    data-target=".bs-example-modal-lg">Запись на собеседование
+            </button>
         </div>
     </div>
 </div>
 
-<div class="wrapper">
-    <div class="container-fluid">
-        <div class="row">
+<div class="container-fluid">
+    <div class="row main_panel">
+        <div class="col-md-3">
             <div id="main_frame">
                 <a href="https://vk.com/1trudovoy" target="_blank"><img class="social" src="Images\VK.png"
-                                                                        alt="https://vk.com/studjob_ru"/></a>
+                                                                        alt="https://vk.com/1trudovoy"/></a>
                 <a href="https://ok.ru/profile/585119161352" target="_blank"><img class="social" src="Images\OK.png"
                                                                                   alt="https://ok.ru/profile/585119161352"/></a>
                 <a href="https://www.facebook.com/profile.php?id=100016803555363" target="_blank"><img class="social"
@@ -75,28 +72,50 @@
                 <a href="https://www.avito.ru/1trudovoy" target="_blank"><img class="social" src="Images/avito.jpg"
                                                                               alt="https://www.avito.ru/1trudovoy"/></a>
             </div>
-            <div class="main_panel">
+        </div>
+        <div class="col-md-9">
+            <div class="navigation">
                 <a class="main_panel_button" href="contacts.html">Контакты</a>
                 <a class="main_panel_button" href="report.html">Отзывы</a>
                 <a class="main_panel_button" href="accommodation.html">Проживание</a>
-                <a id="disabled" class="main_panel_button" href="disabled.html">Вакансии<img src="Images/disabled.png" alt="no pic" style="padding: 0; margin: 0;"></a>
+                <a id="disabled" class="main_panel_button" href="disabled.html">Вакансии<img src="Images/disabled.png"
+                                                                                             alt="no pic"
+                                                                                             style="padding: 0; margin: 0;"></a>
                 <a class="main_panel_button" href="vacancy.html">Вакансии</a>
-                <a class="main_panel_button" href="index.html">О нас</a>
+                <a class="main_panel_button" href="#">О нас</a>
+            </div>
+            <div class="navigation-mini" style="text-align: right; margin-top: 3px">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Меню
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+                        <li><a href="index.html">О нас</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="disabled.html">Вакансии<img src="Images/disabled-responsive.png" alt="no pic"></a>
+                        </li>
+                        <li><a href="accommodation.html">Проживание</a></li>
+                        <li><a href="report.html">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<h1>На данный момент мы проводим набор на следующие вакансии:</h1>
+<h1 class="text-14 text-18">На данный момент мы проводим набор на следующие вакансии:</h1>
 
 <div class="wrapper">
     <div class="container-fluid">
         <div class="row">
-            <div class="vacancy col-md-6">
+            <div class="vacancy col-md-6 col-sm-12 col-xs-12">
                 <div class="row description">
                     <img src="Images/vacancy-1.png" alt="IMG not found" style="float: left; margin: 7px 7px 7px 0">
-                    <h2>Грузчик</h2><br>
-                    <h4>З.П. от 45 000 до 70 000 рублей. <br><br>
+                    <h2 class="text-18">Грузчик</h2><br>
+                    <h4 class="text-14 text-14-800">З.П. от 45 000 до 70 000 рублей. <br><br>
                         Обязанности: проведение разгрузочно-погрузочных работ, развоз товара по территории склада.
                         <br><br>
                         Требования: внимательность, отсутствие противопоказаний к физическим нагрузкам. <br><br>
@@ -117,11 +136,11 @@
                 </div>
             </div>
 
-            <div class="vacancy col-md-6">
+            <div class="vacancy col-md-6 col-sm-12 col-xs-12">
                 <div class="row description">
                     <img src="Images/vacancy-2.png" alt="IMG not found" style="float: left; margin: 7px 7px 7px 0">
-                    <h2>Упаковщик</h2><br>
-                    <h4>З.П. от 40 000 до 60 000 рублей <br><br>
+                    <h2 class="text-18">Упаковщик</h2><br>
+                    <h4 class="text-14 text-14-800">З.П. от 40 000 до 60 000 рублей <br><br>
                         Обязанности: установка магнитов, стикеровка, упаковка товара. <br><br>
                         Требования: внимательность, усидчивость, работа монотонная. <br><br>
                         Опыт работы: в первую смену проводится обучение. <br><br>
@@ -146,11 +165,11 @@
 <div class="wrapper">
     <div class="container-fluid">
         <div class="row">
-            <div class="vacancy col-md-6">
+            <div class="vacancy col-md-6 col-sm-12 col-xs-12">
                 <div class="row description">
                     <img src="Images/vacancy-3.png" alt="IMG not found" style="float: left; margin: 7px 7px 7px 0">
-                    <h2>Комплектовщик</h2><br>
-                    <h4>З.П. от 47 000 до 75 000 рублей. <br><br>
+                    <h2 class="text-18">Комплектовщик</h2><br>
+                    <h4 class="text-14 text-14-800">З.П. от 47 000 до 75 000 рублей. <br><br>
                         Обязанности: Комплектование товара при помощи ТСД или по накладным. <br><br>
                         Требования: Внимательность, отсутствие противопоказаний к физическому труду, желание
                         зарабатывать. <br><br>
@@ -170,11 +189,11 @@
                 </div>
             </div>
 
-            <div class="vacancy col-md-6">
+            <div class="vacancy col-md-6 col-sm-12 col-xs-12">
                 <div class="row description">
                     <img src="Images/vacancy-4.png" alt="IMG not found" style="float: left; margin: 7px 7px 7px 0">
-                    <h2>Водитель погрузчика до 4 кВт.</h2><br>
-                    <h4>З.П. от 60 000 до 120 000 рублей. <br><br>
+                    <h2 class="text-18">Водитель погрузчика до 4 кВт.</h2><br>
+                    <h4 class="text-14 text-14-800">З.П. от 60 000 до 120 000 рублей. <br><br>
                         Обязанности: выгрузка/загрузка контейнеров, фур, при помощи электропогрузчика, адресная
                         расстановка товара на складе. <br><br>
                         Требования: удостоверение водителя погрузчика до 4 кВт, внимательность. <br><br>
@@ -201,11 +220,11 @@
 <div class="wrapper">
     <div class="container-fluid">
         <div class="row">
-            <div class="vacancy col-md-6">
+            <div class="vacancy col-md-6 col-sm-12 col-xs-12">
                 <div class="row description">
                     <img src="Images/vacancy-5.png" alt="IMG not found" style="float: left; margin: 7px 7px 7px 0">
-                    <h2>Машинист-тракторист</h2><br>
-                    <h4>З.П. от 60 000 до 120 000 рублей. <br><br>
+                    <h2 class="text-18">Машинист-тракторист</h2><br>
+                    <h4 class="text-14 text-14-800">З.П. от 60 000 до 120 000 рублей. <br><br>
                         Обязанности: Адресная расстановка паллет по стеллажам при помощи ричтрака. <br><br>
                         Требования: Права машиниста-тракториста категории B обязательны. <br><br>
                         Опыт работы: от 1 года. <br><br>
@@ -224,11 +243,11 @@
                 </div>
             </div>
 
-            <div class="vacancy col-md-6">
+            <div class="vacancy col-md-6 col-sm-12 col-xs-12">
                 <div class="row description">
                     <img src="Images/vacancy-6.png" alt="IMG not found" style="float: left; margin: 7px 7px 7px 0">
-                    <h2>Монтажник</h2><br>
-                    <h4>З.П. от 57 000 до 115 000 рублей. <br><br>
+                    <h2 class="text-18">Монтажник</h2><br>
+                    <h4 class="text-14 text-14-800">З.П. от 57 000 до 115 000 рублей. <br><br>
                         Обязанности: Монтаж/демонтаж баннеров, ролл-апов, пресс-воллов, вывесок, коробов различной
                         формы, сценических декор-конструкций. <br><br>
                         Требования: Права машиниста-тракториста категории B обязательны. <br><br>
@@ -256,7 +275,7 @@
 <div class="container-fluid">
     <div class="row" id="credits">
         <div id="andrei">
-            <a href="https://www.linkedin.com/in/andrei-suvorkov/" target="_blank" style="text-decoration: none"><h3 id="creator">code and design by Andrei Suvorkov</h3></a>
+            <a href="https://www.linkedin.com/in/andrei-suvorkov/" target="_blank" style="text-decoration: none"><h3 class="text-14" id="creator">code and design by Andrei Suvorkov</h3></a>
         </div>
         <br>
         <div id="year">
@@ -271,7 +290,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
 
-            <h3 style="border-radius: 5px 5px 0px 0px; margin-top: 0px; margin-bottom: 0px; margin-right: -0.5px; background-color: #2c2c2c; text-transform: uppercase; color: white; padding-left: 30px; padding-top: 15px; padding-bottom: 15px">
+            <h3 class="text-14" style="border-radius: 5px 5px 0px 0px; margin-top: 0px; margin-bottom: 0px; margin-right: -0.5px; background-color: #2c2c2c; text-transform: uppercase; color: white; padding-left: 30px; padding-top: 15px; padding-bottom: 15px">
                 Oставить сообщение</h3>
 
             <div class="container-fluid">
@@ -279,22 +298,19 @@
 
                     <div class="container-fluid">
                         <div class="row" style="padding-top: 20px">
-                            <div class="col-md-5">
-                                <h5 style="color: black">Фамилия, Имя</h5>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <h5 style="color: black">Имя</h5>
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <h5 style="color: black">Телефон</h5>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <input id="name" type="text" name="name" required="required" placeholder="Имя..."/>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <input class="col-md-12 col-sm-12 col-xs-12" id="name" type="text" name="name"
+                                       required="required" placeholder="Имя..."/>
                             </div>
-                            <div class="col-md-7">
-                                <input id="phone" type="text" name="phone" required="required"
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <input class="col-md-12 col-sm-12 col-xs-12" id="phone" type="text" name="phone"
+                                       required="required"
                                        placeholder="Hомер телефона..."/>
                             </div>
                         </div>
@@ -302,21 +318,21 @@
 
                     <div class="container-fluid">
                         <div class="row" style="padding-top: 20px">
-                            <div class="col-md-12">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
                                 <h5 style="color: black; margin-top: 30px">Сообщение</h5>
                             </div>
-                            <div class="col-md-12">
-                                <textarea name="report" id="text" cols="30" rows="10"></textarea>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <textarea class="col-md-12 col-sm-12 col-xs-12" name="report" id="text" rows="10"></textarea>
                             </div>
                         </div>
                     </div>
 
                     <div class="container-fluid">
                         <div class="row" style="padding-top: 20px">
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-sm-12 col-xs-12">
                                 <h5 style="color: black">Заполните, пожалуйста, все поля</h5>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-12 col-xs-12" style="text-align: center">
                                 <button id="submit" type="submit" data-toggle="popover" title="Popover title"
                                         data-content="And here's some amazing content. It's very engaging. Right?">
                                     Oставить сообщение
