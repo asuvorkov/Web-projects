@@ -36,41 +36,38 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="logo col-md-1">
+        <div class="logo col-md-2 col-sm-3 col-xs-4">
             <img src="Images/LOGO.png" alt="IMG not found" height="70" style="margin-left: 20px">
         </div>
-        <div class="speed_call col-md-11">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3 style="text-align: center; color: #999999">Достойный труд - достойная оплата!</h3>
-                </div>
-                <div class="col-md-3">
-                    <h4 style="color: #999999; text-align: center">
-                        <a id="slogan-tel" href="tel:+74957685905" style="font-size: 20px">+7 (495)768 59 05 <br>
+        <div class="col-md-4 col-sm-9 col-xs-8 speed_call">
+            <h3 id="slogan" style="text-align: center; color: #999999">Достойный труд - достойная оплата!</h3>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 speed_call">
+            <h4 style="color: #999999; text-align: center">
+                <a id="slogan-tel" href="tel:+74957685905" style="font-size: 20px">+7 (495)768 59 05 <br>
 
-                            <!-- Large modal -->
-                            <a href="#" id="callback" data-toggle="modal" data-target=".bs-example-modal-lg"><h3
-                                    style="font-size: 12px; color: #ba1212; font-weight: bold">ЗАКАЗАТЬ ОБРАТНЫЙ
-                                ЗВОНОК</h3></a></a>
-                    </h4>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <button id="interview" type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target=".bs-example-modal-lg">Запись на собеседование
-                    </button>
-                </div>
-            </div>
+                    <!-- Large modal -->
+                    <a href="#" id="callback" data-toggle="modal" data-target=".bs-example-modal-lg"><h3
+                            style="font-size: 12px; color: #ba1212; font-weight: bold">ЗАКАЗАТЬ ОБРАТНЫЙ
+                        ЗВОНОК</h3></a></a>
+            </h4>
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 speed_call" style="text-align: center">
+            <!-- Large modal -->
+            <button id="interview" type="button" class="btn btn-primary" data-toggle="modal"
+                    data-target=".bs-example-modal-lg">Запись на собеседование
+            </button>
         </div>
     </div>
 </div>
 
-<div class="wrapper">
-    <div class="container-fluid">
-        <div class="row">
+<div class="container-fluid">
+    <div class="row main_panel">
+        <div class="col-md-3">
             <div id="main_frame">
                 <a href="https://vk.com/1trudovoy" target="_blank"><img class="social" src="Images\VK.png"
-                                                                        alt="https://vk.com/studjob_ru"/></a>
+                                                                        alt="https://vk.com/1trudovoy"/></a>
                 <a href="https://ok.ru/profile/585119161352" target="_blank"><img class="social" src="Images\OK.png"
                                                                                   alt="https://ok.ru/profile/585119161352"/></a>
                 <a href="https://www.facebook.com/profile.php?id=100016803555363" target="_blank"><img class="social"
@@ -79,7 +76,9 @@
                 <a href="https://www.avito.ru/1trudovoy" target="_blank"><img class="social" src="Images/avito.jpg"
                                                                               alt="https://www.avito.ru/1trudovoy"/></a>
             </div>
-            <div class="main_panel">
+        </div>
+        <div class="col-md-9">
+            <div class="navigation">
                 <a class="main_panel_button" href="contacts.html">Контакты</a>
                 <a class="main_panel_button" href="report.html">Отзывы</a>
                 <a class="main_panel_button" href="accommodation.html">Проживание</a>
@@ -87,14 +86,31 @@
                                                                                              alt="no pic"
                                                                                              style="padding: 0; margin: 0;"></a>
                 <a class="main_panel_button" href="vacancy.html">Вакансии</a>
-                <a class="main_panel_button" href="index.html">О нас</a>
+                <a class="main_panel_button" href="#">О нас</a>
+            </div>
+            <div class="navigation-mini" style="text-align: right; margin-top: 3px">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Меню
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+                        <li><a href="index.html">О нас</a></li>
+                        <li><a href="vacancy.html">Вакансии</a></li>
+                        <li><a href="disabled.html">Вакансии<img src="Images/disabled-responsive.png" alt="no pic"></a>
+                        </li>
+                        <li><a href="accommodation.html">Проживание</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-
 </div>
 
-<h1>Oтзывы</h1>
+<h1 class="text-18">Oтзывы</h1>
 
 
 <div class="wrapper">
@@ -102,9 +118,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="report">
-                    <h4 class="name"></h4>
-                    <h4 class="date"></h4>
-                    <h5 class="message"></h5>
+                    <h4 class="name text-14"></h4>
+                    <h4 class="date text-14"></h4>
+                    <h5 class="message text-14"></h5>
                     <hr>
                 </div>
             </div>
@@ -135,7 +151,7 @@
     <div class="row" id="credits">
         <div id="andrei">
             <a href="https://www.linkedin.com/in/andrei-suvorkov/" target="_blank" style="text-decoration: none"><h3
-                    id="creator">code and design by Andrei
+                    id="creator" class="text-14">code and design by Andrei
                 Suvorkov</h3></a>
         </div>
         <br>
@@ -150,7 +166,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
 
-            <h3 style="border-radius: 5px 5px 0px 0px; margin-top: 0px; margin-bottom: 0px; margin-right: -0.5px; background-color: #2c2c2c; text-transform: uppercase; color: white; padding-left: 30px; padding-top: 15px; padding-bottom: 15px">
+            <h3 class="text-14" style="border-radius: 5px 5px 0px 0px; margin-top: 0px; margin-bottom: 0px; margin-right: -0.5px; background-color: #2c2c2c; text-transform: uppercase; color: white; padding-left: 30px; padding-top: 15px; padding-bottom: 15px">
                 Oставить сообщение</h3>
 
             <div class="container-fluid">
@@ -158,22 +174,19 @@
 
                     <div class="container-fluid">
                         <div class="row" style="padding-top: 20px">
-                            <div class="col-md-5">
-                                <h5 style="color: black">Фамилия, Имя</h5>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <h5 style="color: black">Имя</h5>
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <h5 style="color: black">Телефон</h5>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <input id="name" type="text" name="name" required="required" placeholder="Имя..."/>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <input class="col-md-12 col-sm-12 col-xs-12" id="name" type="text" name="name"
+                                       required="required" placeholder="Имя..."/>
                             </div>
-                            <div class="col-md-7">
-                                <input id="phone" type="text" name="phone" required="required"
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <input class="col-md-12 col-sm-12 col-xs-12" id="phone" type="text" name="phone"
+                                       required="required"
                                        placeholder="Hомер телефона..."/>
                             </div>
                         </div>
@@ -181,21 +194,21 @@
 
                     <div class="container-fluid">
                         <div class="row" style="padding-top: 20px">
-                            <div class="col-md-12">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
                                 <h5 style="color: black; margin-top: 30px">Сообщение</h5>
                             </div>
-                            <div class="col-md-12">
-                                <textarea name="report" id="text" cols="30" rows="10"></textarea>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <textarea class="col-md-12 col-sm-12 col-xs-12" name="report" id="text" rows="10"></textarea>
                             </div>
                         </div>
                     </div>
 
                     <div class="container-fluid">
                         <div class="row" style="padding-top: 20px">
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-sm-12 col-xs-12">
                                 <h5 style="color: black">Заполните, пожалуйста, все поля</h5>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-12 col-xs-12" style="text-align: center">
                                 <button id="submit" type="submit" data-toggle="popover" title="Popover title"
                                         data-content="And here's some amazing content. It's very engaging. Right?">
                                     Oставить сообщение
@@ -243,13 +256,13 @@
             <form id="add_report_form" action="add_report.php" method="post">
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
                             <label for="report_name" style="margin-bottom: 5px">Имя</label> <br>
                             <input id="report_name" style="width: 100%" type="text" name="name" required="required"
                                    placeholder="имя..."/>
                         </div>
-                        <div class="col-md-6">
-                            <label for="report_name" style="margin-bottom: 5px">Дата</label> <br>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <label for="report_date" style="margin-bottom: 5px">Дата</label> <br>
                             <input id="report_date" style="width: 100%" type="text" readonly>
                         </div>
                     </div>
@@ -265,7 +278,7 @@
                         <div class="col-md-6">
                             <h5 style="color: black; text-align: left">Заполните, пожалуйста, все поля</h5>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" style="text-align: center">
                             <button id="report_submit" type="submit" data-toggle="popover" title="Popover title"
                                     data-content="And here's some amazing content. It's very engaging. Right?">
                                 Oставить отзыв

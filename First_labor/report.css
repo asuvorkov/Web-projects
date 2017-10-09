@@ -32,18 +32,15 @@ body {
 	color: #999999;
 }
 #phone{
-	width: 480px;
 	height: 40px;
 	margin-top: 5px;
 	margin-right: 5px;
 }
 #name {
-	width: 350px;
 	height: 40px;
 	margin-top: 5px;
 }
 #text {
-	width: 840px;
 	height: 200px;
 	margin-top: 5px;
 }
@@ -168,7 +165,44 @@ hr {
 	text-decoration: none;
 	color: #999999;
 }
-
+#dropdownMenu1{
+	background-color: #fff;
+	text-transform: capitalize;
+}
+#dropdownMenu1:hover{
+	background-color: #e6e6e6
+}
+@media (max-width: 450px) {
+	#slogan{
+		font-size: 15px;
+	}
+}
+@media (max-width: 920px) {
+	.navigation{
+		display: none;
+	}
+	.navigation-mini{
+		display: block;
+	}
+}
+@media (min-width: 921px) {
+	.navigation{
+		display: block;
+	}
+	.navigation-mini{
+		display: none;
+	}
+}
+@media (max-width: 800px) {
+	.text-18{
+		font-size: 18px;
+	}
+}
+@media (max-width: 500px) {
+	.text-14{
+		font-size: 14px;
+	}
+}
 
 
 
