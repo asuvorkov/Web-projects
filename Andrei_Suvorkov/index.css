@@ -19,6 +19,10 @@
     background: url(Images/home1920-1280-contrast.jpg)no-repeat center top scroll;
     background-size: 100% auto;
 }
+#hamburger_collapse {
+    margin-top: 25px;
+    width: 200px;
+}
 .navigation{
     height: 80px;
 }
@@ -51,6 +55,11 @@
 }
 
 
+
+
+
+
+
 @media (max-width: 992px) {
     .navigation{
         display: none;
@@ -73,5 +82,8 @@
     .slogan {
         padding-top: 90px;
         padding-bottom: 20px;
+    }
+    #hamburger_collapse {
+
     }
 }
