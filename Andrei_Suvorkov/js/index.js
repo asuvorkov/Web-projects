@@ -12,7 +12,7 @@
             e.preventDefault();
             (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
             $(document).ready(function () {
-                var leftShouldBe = $( document ).width() - 300;
+                var leftShouldBe = $( document ).width() - 350;
                 $ ("#hamburger_collapse").css ("left", leftShouldBe);
             });
         });
