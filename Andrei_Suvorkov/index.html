@@ -11,6 +11,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="css/animate.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
@@ -29,7 +30,7 @@
         <div class="col-md-1 col-sm-2 col-xs-4" style="">
             <img src="Images/logo-80-80.png" alt="no img">
         </div>
-        <div class="col-md-11 col-sm-10 col-xs-8">
+        <div class="col-md-11 col-sm-10 col-xs-8 animated fadeInDown">
             <div class="navigation">
                 <a class="navigation_button" href="contact.html">contact</a>
                 <a class="navigation_button" href="blog.html">blog</a>
@@ -40,7 +41,8 @@
             </div>
 
             <div class="navigation-mobile" style="float: right; margin-top: 3px">
-                <button id="hamburger" class="c-hamburger c-hamburger--htx" type="button" data-toggle="collapse" data-target="#hamburger_collapse" aria-expanded="false" aria-controls="collapseExample">
+                <button id="hamburger" class="c-hamburger c-hamburger--htx" type="button" data-toggle="collapse"
+                        data-target="#hamburger_collapse" aria-expanded="false" aria-controls="collapseExample">
                     <span>toggle menu</span>
                 </button>
                 <div class="collapse navbar-fixed-top" id="hamburger_collapse">
@@ -50,28 +52,57 @@
                         <ul><a class="navigation_button_mobile" href="portfolio.html">portfolio</a></ul>
                         <ul><a class="navigation_button_mobile" href="about.html">about</a></ul>
                         <ul><a class="navigation_button_mobile" href="blog.html">blog</a></ul>
-                        <ul style="margin-bottom: 0"><a class="navigation_button_mobile" href="contact.html">contact</a></ul>
+                        <ul style="margin-bottom: 0"><a class="navigation_button_mobile" href="contact.html">contact</a>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="slogan">
-                <p class="quote">"Start with the necessary, do the possible and, suddenly, you will understand that you have achieved the incredible."
-                    <br> <p class="quote" style="padding-bottom: 40px">Unknown</p></p>
-                <p style="font-family: 'Merienda One', cursive; text-transform: uppercase">When software development is a passion</p>
+                <p class="quote">"Start with the necessary, do the possible and, suddenly, you will understand that you
+                    have achieved the incredible."
+                    <br>
+                <p class="quote" style="padding-bottom: 40px">Unknown</p></p>
+                <p id="main_text" style="font-family: 'Merienda One', cursive; text-transform: uppercase">When software
+                    development is a passion</p>
             </div>
         </div>
     </div>
 </div>
 
+<!-- *********************     resume container     ****************************************** -->
 <div class="container-fluid">
-    <div class="row" style="background-color: #2b542c; height: 300px">
-        Some text
+    <div class="row" style="background-color: #EDEEEF; height: auto">
+        <div class="container">
+            <p class="container_header">Knowledge and experience</p>
+            <div class="container">
+                <p style="font-size: 18px">Looking for a motivated employee with experience? You are on the right way!
+                    Every
+                    day I am working on myself,
+                    gathering knowledge and experience in different areas of software development, constantly improving
+                    the
+                    quality of code and its performance. At the moment, I am a student of the University of Applied
+                    Sciences
+                    of Wiesbaden, Faculty of Computer Science.</p>
+            </div>
+            <a class="container_button col-md-offset-5 col-md-2 col-sm-offset-5 col-sm-3 col-xs-offset-4 col-xs-4" href="resume.html">resume</a>
+        </div>
     </div>
 </div>
 
+<!-- *********************     portfolio container     ************************************** -->
 
+
+<!-- *********************     about container     ****************************************** -->
+
+
+<!-- *********************     blog container     ******************************************* -->
+
+<!-- *********************     contact container     **************************************** -->
+
+
+<!-- *********************     credentials container     ************************************ -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -1,4 +1,10 @@
 (function () {
+    /* Main container nav menu and text appearance */
+    $(window).ready(function(){
+        setTimeout ("$('#main_text').fadeIn('slow');",1000);
+    });
+
+    /* Hamburger button controller */
     "use strict";
 
     var toggles = document.querySelectorAll(".c-hamburger");
