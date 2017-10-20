@@ -108,15 +108,79 @@
     display: block;
     padding: 10px 20px 10px 20px;
     color: #0f0f0f;
+    transition: 0.5s;
 }
 .container_button:hover {
     text-decoration: none;
     background-color: #0f0f0f;
     color: white;
+    transition: 0.5s;
 }
 
 /* portfolio container styles *************/
-
+.project_1, .project_2, .project_3 {
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    width: 30%;
+    float: left;
+    height: 400px;
+}
+.project_1{
+    margin-left: 2%;
+}
+.project_2 {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.project_3 {
+    margin-right: 2%;
+}
+.project_1:hover, .project_2:hover, .project_3:hover{
+    box-shadow:0 0 0 400px rgba(0, 0, 0, 0.8) inset;
+    transition: 0.3s;
+}
+.project_wrapper_1, .project_wrapper_2, .project_wrapper_3  {
+    display: none;
+}
+.project_text_1 {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Courgette', cursive;
+}
+.project_text_2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Merienda One', cursive;
+}
+.project_button {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    background-color: transparent;
+    display: block;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    transition: 0.3s;
+}
+.project_button:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #0f0f0f;
+    transition: 0.3s;
+}
 
 /* about container styles *****************/
 
@@ -139,6 +203,19 @@
         padding-top: 260px;
         padding-bottom: 90px;
     }
+    .project_1, .project_2, .project_3 {
+        height: 300px;
+    }
+    .project_text_1{
+        margin-top: 50px;
+        font-size: 20px;
+    }
+    .project_text_2 {
+        font-size: 30px;
+    }
+    .project_button {
+        margin-top: 80px;
+    }
 }
 @media (max-width: 992px) {
     #main_picture {
@@ -154,6 +231,9 @@
         padding-top: 200px;
         padding-bottom: 60px;
     }
+    .project_button {
+        font-size: 15px;
+    }
 }
 @media (max-width: 768px) {
     .slogan {
@@ -163,6 +243,16 @@
     .quote {
         font-size: 20px;
         font-family: 'Courgette', cursive;
+    }
+    .project_1, .project_2, .project_3 {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .project_2, .project_3 {
+        margin-top: 50px;
+    }
+    .project_button {
+        font-size: 20px;
     }
 }
 @media (max-width: 650px) {
