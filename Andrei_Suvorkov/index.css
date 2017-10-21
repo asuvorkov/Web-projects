@@ -95,6 +95,7 @@
     margin-bottom: 50px;
 }
 .container_button {
+    margin: auto;
     text-decoration: none;
     text-align: center;
     margin-top: 50px;
@@ -106,7 +107,7 @@
     border-color: #0f0f0f;
     background-color: transparent;
     display: block;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 0px 10px 0px;
     color: #0f0f0f;
     transition: 0.5s;
 }
@@ -199,10 +200,90 @@
 
 
 /* contact container styles ***************/
+#contact_picture {
+    background-image: url(Images/contact_main.jpg);
+    /* Set a specific height */
+    min-height: 500px;
 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'Merienda One', cursive;
+    text-transform: uppercase;
+}
+.contact_button {
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    background-color: transparent;
+    display: block;
+    padding: 10px 0px 10px 0px;
+    color: white;
+    transition: 0.5s;
+}
+.contact_button:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #0f0f0f;
+    transition: 0.5s;
+}
 
 /* credentials container styles ***********/
-
+.credentials_button {
+    border: none;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 13px 20px;
+    margin: 20px 0 0 10px;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+.credentials_button:hover {
+    transition: 0.7s;
+    color: #999;
+    text-decoration: none;
+}
+.credentials_mobile {
+    display: none;
+}
+.socials_button {
+    text-decoration: none;
+    color: #999;
+    transition: 0.3s;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.socials_button:hover {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    padding-bottom: 15px;
+}
+.made_by {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+    margin: 30px 0 -15px 0;
+    padding-bottom: 70px;
+    color: white
+}
 
 
 
@@ -273,5 +354,11 @@
     .quote {
         font-size: 14px;
         font-family: 'Courgette', cursive;
+    }
+    .credentials {
+        display: none;
+    }
+    .credentials_mobile {
+        display: block;
     }
 }
