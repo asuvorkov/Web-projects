@@ -10,8 +10,9 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="css/hamburger.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/magnific.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
@@ -31,7 +32,7 @@
         <div class="col-md-1 col-sm-2 col-xs-4" style="">
             <img src="Images/logo-80-80.png" alt="no img">
         </div>
-        <div class="col-md-11 col-sm-10 col-xs-8 animated fadeInDown">
+        <div class="col-md-11 col-sm-10 col-xs-8 animated" style="display: none">
             <div class="navigation">
                 <a class="navigation_button" href="contact.html">contact</a>
                 <a class="navigation_button" href="blog.html">blog</a>
@@ -144,9 +145,94 @@
 
 <!-- *********************     about container     ***************************************************************** -->
 <div class="container-fluid">
+    <div class="row" style="height: auto" id="about_pic"></div>
+</div>
+
+<div class="container-fluid">
     <div class="row" style="height: auto">
         <div class="container">
             <p class="container_header">My live as a software developer</p>
+            <div class="popup-gallery">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/1-1920x1920.png" title="Awesome trip to Venice">
+                                <img class="img-responsive" src="Images/home_about/1-1920x1920.png" alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/2-1920x1920.png" title="Walk in the park with my girlfriend">
+                                <img class="img-responsive" src="Images/home_about/2-1920x1920.png" alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/3-1920x1920.png" title="First time in Monaco">
+                                <img class="img-responsive" src="Images/home_about/3-1920x1920.png" alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/4-1920x1920.png" title="Nice weekend in Bodensee, Germany">
+                                <img class="img-responsive" src="Images/home_about/4-1920x1920.png" alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/5-1920x1920.png" title="Germany got the FIFA World Cup">
+                                <img class="img-responsive" src="Images/home_about/5-1920x1920.png" alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/6-1920x1920.png" title="With friends in Portugal">
+                                <img class="img-responsive" src="Images/home_about/6-1920x1920.png" alt="no image found">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/7-1920x1920.png" title="National park in Israel">
+                                <img class="img-responsive" src="Images/home_about/7-1920x1920.png" alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/8-1920x1920.png" title="In Prague with the good company">
+                                <img class="img-responsive" src="Images/home_about/8-1920x1920.png" alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/9-1920x1920.png" title="Amsterdam museum">
+                                <img class="img-responsive" src="Images/home_about/9-1920x1920.png" alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/10-1920x1920.png" title="Enjoying the sun in Barcelona">
+                                <img class="img-responsive" src="Images/home_about/10-1920x1920.png" alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/11-1920x1920.png" title="Palace in Vienna">
+                                <img class="img-responsive" src="Images/home_about/11-1920x1920.png" alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/12-1920x1920.png" title="Amazing building of Gaudi, Barcelona">
+                                <img class="img-responsive" src="Images/home_about/12-1920x1920.png" alt="no image found">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="container_button col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8"
+               href="about.html">learn more about me</a>
+        </div>
+    </div>
+</div>
+
+<!-- *********************     blog container     ****************************************************************** -->
+<div class="container-fluid">
+    <div class="row" style="height: auto">
+        <div class="container">
+            <p class="container_header">bla bla</p>
             <div class="container">
                 <p style="font-size: 18px; font-family: 'Dosis', sans-serif;"></p>
             </div>
@@ -155,8 +241,6 @@
         </div>
     </div>
 </div>
-
-<!-- *********************     blog container     ****************************************************************** -->
 
 <!-- *********************     contact container     *************************************************************** -->
 
@@ -169,6 +253,7 @@
 <script src="js/Default%20JS/jquery-3.2.1.min.js"></script>
 <script src="js/Default%20JS/bootstrap.js"></script>
 <script language="JavaScript" type="text/javascript" src="js/index.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/magnific.js"></script>
 </body>
 </html>
 

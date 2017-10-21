@@ -183,7 +183,17 @@
 }
 
 /* about container styles *****************/
+#about_pic {
+    background-image: url(Images/about_main.jpg);
+    /* Set a specific height */
+    min-height: 500px;
 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* blog container styles ******************/
 

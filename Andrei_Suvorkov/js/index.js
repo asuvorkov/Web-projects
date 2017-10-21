@@ -1,7 +1,9 @@
 (function () {
     /* Main container nav menu and text appearance */
-    $(window).ready(function(){
-        setTimeout ("$('#main_text').fadeIn('slow');",1000);
+    $(document).ready(function(){
+        setTimeout ("$('#main_text').fadeIn('slow');", 1500);
+        setTimeout ("$ ('#main_picture div.animated').css ('display', 'block');", 2500);
+        setTimeout("$('#main_picture div.animated').addClass('fadeInDown');", 2500);
     });
 
     /* Hamburger button controller */
@@ -36,6 +38,27 @@
     $('.project_wrapper_3').hide();
     $('.project_3').hover(function() {
         $('.project_wrapper_3').toggle();
+    });
+
+    /* about popup carousel */
+    $(document).ready(function() {
+        $('.popup-gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-img-mobile',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+            },
+            image: {
+                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                titleSrc: function(item) {
+                    return item.el.attr('title');
+                }
+            }
+        });
     });
 
 })();
