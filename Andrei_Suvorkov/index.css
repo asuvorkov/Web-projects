@@ -39,7 +39,7 @@
 .navigation-mobile {
     display: none;
 }
-.navigation_button. .navigation_button:focus{
+.navigation_button, .navigation_button:focus{
     float: right;
     border: none;
     font-size: 12px;
