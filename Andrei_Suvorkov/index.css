@@ -39,7 +39,7 @@
 .navigation-mobile {
     display: none;
 }
-.navigation_button{
+.navigation_button. .navigation_button:focus{
     float: right;
     border: none;
     font-size: 12px;
@@ -94,7 +94,7 @@
     margin-top: 100px;
     margin-bottom: 50px;
 }
-.container_button {
+.container_button, .container_button:focus {
     margin: auto;
     text-decoration: none;
     text-align: center;
@@ -160,7 +160,7 @@
     font-size: 40px;
     font-family: 'Merienda One', cursive;
 }
-.project_button {
+.project_button, .project_button:focus {
     text-decoration: none;
     text-align: center;
     margin-top: 100px;
@@ -220,7 +220,7 @@
     font-family: 'Merienda One', cursive;
     text-transform: uppercase;
 }
-.contact_button {
+.contact_button, .contact_button:focus {
     margin: auto;
     text-decoration: none;
     text-align: center;
@@ -245,7 +245,7 @@
 }
 
 /* credentials container styles ***********/
-.credentials_button {
+.credentials_button, .credentials_button:focus {
     border: none;
     font-size: 12px;
     text-decoration: none;
@@ -263,7 +263,7 @@
 .credentials_mobile {
     display: none;
 }
-.socials_button {
+.socials_button, .socials_button:focus {
     text-decoration: none;
     color: #999;
     transition: 0.3s;

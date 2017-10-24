@@ -2,6 +2,8 @@
     /* Main container nav menu and text appearance */
     $(document).ready(function(){
         setTimeout ("$('#main_text').fadeIn('slow');", 1500);
+        setTimeout ("$ ('#download').css ('display', 'block');", 2000);
+        setTimeout("$('#download').addClass('flipInY');", 2000);
         setTimeout ("$ ('#main_picture div.animated').css ('display', 'block');", 2500);
         setTimeout("$('#main_picture div.animated').addClass('fadeInDown');", 2500);
     });
@@ -26,40 +28,18 @@
         });
     }
 
-    /* portfolio projects animation */
-    $('.project_wrapper_1').hide();
-    $('.project_1').hover(function() {
-        $('.project_wrapper_1').toggle();
-    });
-    $('.project_wrapper_2').hide();
-    $('.project_2').hover(function() {
-        $('.project_wrapper_2').toggle();
-    });
-    $('.project_wrapper_3').hide();
-    $('.project_3').hover(function() {
-        $('.project_wrapper_3').toggle();
-    });
-
-    /* about popup carousel */
-    $(document).ready(function() {
-        $('.popup-gallery').magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            tLoading: 'Loading image #%curr%...',
-            mainClass: 'mfp-img-mobile',
-            gallery: {
-                enabled: true,
-                navigateByImgClick: true,
-                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-            },
-            image: {
-                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-                titleSrc: function(item) {
-                    return item.el.attr('title');
-                }
-            }
-        });
-    });
+    /* featured skills stars animation */
+    var speed = 300;
+    $('#skills_1 .container_text').hover(function(){
+        $(this).find(".fa").stop().animate({padding:3},speed);
+    },function(){
+        $(this).find(".fa").stop().animate({padding:0},speed);
+    })
+    $('#skills_2 .container_text').hover(function(){
+        $(this).find(".fa").stop().animate({padding:3},speed);
+    },function(){
+        $(this).find(".fa").stop().animate({padding:0},speed);
+    })
 
 })();
 

@@ -39,7 +39,7 @@
 .navigation-mobile {
     display: none;
 }
-.navigation_button{
+.navigation_button, .navigation_button:focus{
     float: right;
     border: none;
     font-size: 12px;
@@ -71,7 +71,7 @@
     padding-left: 0;
 }
 .slogan {
-    padding-top: 280px;
+    padding-top: 250px;
     padding-bottom: 140px;
     font-size: 40px;
     text-align: center;
@@ -84,8 +84,33 @@
 #main_text {
     display: none;
 }
+.download_button, .download_button:focus {
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    background-color: transparent;
+    display: block;
+    padding: 10px 0px 10px 0px;
+    color: white;
+    transition: 0.5s;
+}
+.download_button:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #0f0f0f;
+    transition: 0.5s;
+}
+#download {
+    display: none;
+}
 
-/* resume container styles ****************/
+/* employment container styles ****************/
 .container_header {
     font-family: 'Merienda One', cursive;
     text-transform: uppercase;
@@ -94,110 +119,22 @@
     margin-top: 100px;
     margin-bottom: 50px;
 }
-.container_button {
-    margin: auto;
+.link, .link:focus {
     text-decoration: none;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    text-transform: uppercase;
-    font-size: 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #0f0f0f;
-    background-color: transparent;
-    display: block;
-    padding: 10px 0px 10px 0px;
-    color: #0f0f0f;
-    transition: 0.5s;
+    color: #0b0b0b;
 }
-.container_button:hover {
-    text-decoration: none;
-    background-color: #0f0f0f;
-    color: white;
-    transition: 0.5s;
+.link:hover {
+    color: #0b0b0b;
+}
+.container_text {
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
 }
 
-/* portfolio container styles *************/
-.project_1, .project_2, .project_3 {
-    background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    background-position:center;
-    width: 30%;
-    float: left;
-    height: 400px;
+/* featured skills container styles ******************/
+.container_text:hover {
+    background-color: #EDEEEF;
 }
-.project_1{
-    margin-left: 2%;
-}
-.project_2 {
-    margin-left: 3%;
-    margin-right: 3%;
-}
-.project_3 {
-    margin-right: 2%;
-}
-.project_1:hover, .project_2:hover, .project_3:hover{
-    box-shadow:0 0 0 400px rgba(0, 0, 0, 0.8) inset;
-    transition: 0.3s;
-}
-.project_wrapper_1, .project_wrapper_2, .project_wrapper_3  {
-    display: none;
-}
-.project_text_1 {
-    margin-top: 100px;
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    font-family: 'Courgette', cursive;
-}
-.project_text_2 {
-    text-align: center;
-    color: white;
-    font-size: 40px;
-    font-family: 'Merienda One', cursive;
-}
-.project_button {
-    text-decoration: none;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-    font-size: 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: white;
-    background-color: transparent;
-    display: block;
-    padding: 10px 20px 10px 20px;
-    color: white;
-    transition: 0.3s;
-}
-.project_button:hover {
-    text-decoration: none;
-    background-color: white;
-    color: #0f0f0f;
-    transition: 0.3s;
-}
-
-/* about container styles *****************/
-#about_pic {
-    background-image: url(Images/about_main.jpg);
-    /* Set a specific height */
-    min-height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* blog container styles ******************/
-
 
 /* contact container styles ***************/
 #contact_picture {
@@ -220,7 +157,7 @@
     font-family: 'Merienda One', cursive;
     text-transform: uppercase;
 }
-.contact_button {
+.contact_button, .contact_button:focus {
     margin: auto;
     text-decoration: none;
     text-align: center;
@@ -245,7 +182,7 @@
 }
 
 /* credentials container styles ***********/
-.credentials_button {
+.credentials_button, .credentials_button:focus {
     border: none;
     font-size: 12px;
     text-decoration: none;
@@ -263,7 +200,7 @@
 .credentials_mobile {
     display: none;
 }
-.socials_button {
+.socials_button, .socials_button:focus {
     text-decoration: none;
     color: #999;
     transition: 0.3s;
@@ -285,27 +222,11 @@
     color: white
 }
 
-
-
-
 /* Media queries */
 @media (max-width: 1100px) {
     .slogan {
         padding-top: 260px;
         padding-bottom: 90px;
-    }
-    .project_1, .project_2, .project_3 {
-        height: 300px;
-    }
-    .project_text_1{
-        margin-top: 50px;
-        font-size: 20px;
-    }
-    .project_text_2 {
-        font-size: 30px;
-    }
-    .project_button {
-        margin-top: 80px;
     }
 }
 @media (max-width: 992px) {
@@ -322,9 +243,6 @@
         padding-top: 200px;
         padding-bottom: 60px;
     }
-    .project_button {
-        font-size: 15px;
-    }
 }
 @media (max-width: 768px) {
     .slogan {
@@ -334,16 +252,6 @@
     .quote {
         font-size: 20px;
         font-family: 'Courgette', cursive;
-    }
-    .project_1, .project_2, .project_3 {
-        width: 80%;
-        margin-left: 10%;
-    }
-    .project_2, .project_3 {
-        margin-top: 50px;
-    }
-    .project_button {
-        font-size: 20px;
     }
 }
 @media (max-width: 650px) {
