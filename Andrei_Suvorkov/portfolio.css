@@ -117,7 +117,7 @@
     color: white;
     transition: 0.5s;
 }
-.project_1, .project_2, .project_3 {
+.project_1, .project_2, .project_3, .project_4, .project_5, .project_6, .project_7, .project_8, .project_9{
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -128,21 +128,21 @@
     float: left;
     height: 400px;
 }
-.project_1{
+.project_1, .project_4, .project_7{
     margin-left: 2%;
 }
-.project_2 {
+.project_2, .project_5, .project_8 {
     margin-left: 3%;
     margin-right: 3%;
 }
-.project_3 {
+.project_3, .project_6, .project_9 {
     margin-right: 2%;
 }
-.project_1:hover, .project_2:hover, .project_3:hover{
+.project_1:hover, .project_2:hover, .project_3:hover, .project_4:hover, .project_5:hover, .project_6:hover, .project_7:hover, .project_8:hover, .project_9:hover{
     box-shadow:0 0 0 400px rgba(0, 0, 0, 0.8) inset;
     transition: 0.3s;
 }
-.project_wrapper_1, .project_wrapper_2, .project_wrapper_3  {
+.project_wrapper_1, .project_wrapper_2, .project_wrapper_3, .project_wrapper_4, .project_wrapper_5, .project_wrapper_6, .project_wrapper_7, .project_wrapper_8, .project_wrapper_9  {
     display: none;
 }
 .project_text_1 {
