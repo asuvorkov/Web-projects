@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="shortcut icon" href="Images/flavicon.png" type="image/png">
+    <title>Blog - Andrei Suvorkov</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/magnific.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- *********************     navigation     ********************************************************************** -->
+<div class="container-fluid">
+    <div class="row" id="main_picture">
+        <div class="col-md-1 col-sm-2 col-xs-4" style="padding-top: 15px">
+            <img src="Images/logo.png" alt="no img">
+        </div>
+        <div class="col-md-11 col-sm-10 col-xs-8 animated" style="display: none">
+            <div class="navigation">
+                <a class="navigation_button" href="contact.html">contact</a>
+                <a class="navigation_button" href="blog.html">blog</a>
+                <a class="navigation_button" href="about.html">about</a>
+                <a class="navigation_button" href="portfolio.html">portfolio</a>
+                <a class="navigation_button" href="resume.html">resume</a>
+                <a class="navigation_button" href="index.html">home</a>
+            </div>
+
+            <div class="navigation-mobile" style="float: right; margin-top: 3px">
+                <button id="hamburger" class="c-hamburger c-hamburger--htx" type="button" data-toggle="collapse"
+                        data-target="#hamburger_collapse" aria-expanded="false" aria-controls="collapseExample">
+                    <span>toggle menu</span>
+                </button>
+                <div class="collapse navbar-fixed-top" id="hamburger_collapse">
+                    <div class="well">
+                        <ul><a class="navigation_button_mobile" href="index.html">home</a></ul>
+                        <ul><a class="navigation_button_mobile" href="resume.html">resume</a></ul>
+                        <ul><a class="navigation_button_mobile" href="portfolio.html">portfolio</a></ul>
+                        <ul><a class="navigation_button_mobile" href="about.html">about</a></ul>
+                        <ul><a class="navigation_button_mobile" href="blog.html">blog</a></ul>
+                        <ul style="margin-bottom: 0"><a class="navigation_button_mobile" href="contact.html">contact</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="slogan">
+                <p class="quote">"Start with the necessary, do the possible and, suddenly, you will understand that you
+                    have achieved the incredible."
+                    <br>
+                <p class="quote" style="padding-bottom: 40px">Unknown</p></p>
+                <p id="main_text" style="font-family: 'Merienda One', cursive; text-transform: uppercase">When software
+                    development is a passion</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- *********************     resume container     **************************************************************** -->
+<div class="container-fluid">
+    <div class="row" style="background-color: #EDEEEF; height: auto">
+        <div class="container">
+            <p class="container_header">Knowledge and experience</p>
+            <div class="container">
+                <p style="font-size: 18px; font-family: 'Dosis', sans-serif;">Looking for a motivated employee with
+                    experience? You are on the right way! Every day I am working on myself, gathering knowledge and
+                    experience in different areas of software development, constantly improving the quality of code and
+                    its performance. At the moment, I am a student of the University of Applied Sciences of Wiesbaden,
+                    Faculty of Computer Science.</p>
+            </div>
+            <a class="container_button" style="width: 140px" href="resume.html">resume</a>
+        </div>
+    </div>
+</div>
+
+<!-- *********************     portfolio container     ************************************************************* -->
+<div class="container-fluid">
+    <div class="row" style="height: auto">
+        <div class="container">
+            <p class="container_header">Projects</p>
+            <div class="container">
+                <p style="font-size: 18px; font-family: 'Dosis', sans-serif;">Better than any words about a specialist
+                    will say his work, and in my case these are projects. Some of them are now in an active stage of
+                    development. These projects have no commercial value, but they can determine my level of
+                    programming. At the moment, I have several projects in different programming languages and in
+                    different areas.</p>
+            </div>
+        </div>
+        <div class="container-fluid" style="margin-top: 50px">
+            <div class="row">
+                <div class="project_1"
+                     style="background-image: url('Images/hackerrank-600-600.png')">
+                    <div class="project_wrapper_1">
+                        <p class="project_text_1 animated fadeInDown">Learning platform</p>
+                        <p class="project_text_2 animated fadeInUp">Hackerrank</p>
+                        <div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-2 col-xs-8">
+                            <a class="project_button animated slideInDown"
+                               href="https://github.com/asuvorkov/HackerRank">view project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_2"
+                     style="background-image: url('Images/testony-600-600.png')">
+                    <div class="project_wrapper_2">
+                        <p class="project_text_1 animated fadeInDown">Automation</p>
+                        <p class="project_text_2 animated fadeInUp">Testony</p>
+                        <div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-2 col-xs-8">
+                            <a class="project_button animated slideInDown"
+                               href="https://github.com/asuvorkov/QA-TestOny">view project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_3"
+                     style="background-image: url('Images/first_labor-600-600.png')">
+                    <div class="project_wrapper_3">
+                        <p class="project_text_1 animated fadeInDown">Website</p>
+                        <p class="project_text_2 animated fadeInUp">First labor</p>
+                        <div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-offset-2 col-xs-8">
+                            <a class="project_button animated slideInDown"
+                               href="https://github.com/asuvorkov/Web-projects/tree/master/First_labor">view project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="container_button" style="width: 170px" href="portfolio.html">portfolio</a>
+    </div>
+</div>
+
+<!-- *********************     about container     ***************************************************************** -->
+<div class="container-fluid">
+    <div class="row" style="height: auto" id="about_pic"></div>
+</div>
+
+<div class="container-fluid">
+    <div class="row" style="height: auto">
+        <div class="container">
+            <p class="container_header">My live as a software developer</p>
+            <div class="popup-gallery">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/1-1920x1920.jpg" title="Awesome trip to Venice">
+                                <img class="img-responsive" src="Images/home_about/1-1920x1920.jpg"
+                                     alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/2-1920x1920.jpg" title="Walk in the park with my girlfriend">
+                                <img class="img-responsive" src="Images/home_about/2-1920x1920.jpg"
+                                     alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/3-1920x1920.jpg" title="First time in Monaco">
+                                <img class="img-responsive" src="Images/home_about/3-1920x1920.jpg"
+                                     alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/4-1920x1920.jpg" title="Nice weekend in Bodensee, Germany">
+                                <img class="img-responsive" src="Images/home_about/4-1920x1920.jpg"
+                                     alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/5-1920x1920.jpg" title="Germany got the FIFA World Cup">
+                                <img class="img-responsive" src="Images/home_about/5-1920x1920.jpg"
+                                     alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/6-1920x1920.jpg" title="With friends in Portugal">
+                                <img class="img-responsive" src="Images/home_about/6-1920x1920.jpg"
+                                     alt="no image found">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/7-1920x1920.jpg" title="National park in Israel">
+                                <img class="img-responsive" src="Images/home_about/7-1920x1920.jpg"
+                                     alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/8-1920x1920.jpg" title="In Prague with the good company">
+                                <img class="img-responsive" src="Images/home_about/8-1920x1920.jpg"
+                                     alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/9-1920x1920.jpg" title="Amsterdam museum">
+                                <img class="img-responsive" src="Images/home_about/9-1920x1920.jpg"
+                                     alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/10-1920x1920.jpg" title="Enjoying the sun in Barcelona">
+                                <img class="img-responsive" src="Images/home_about/10-1920x1920.jpg"
+                                     alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/11-1920x1920.jpg" title="Palace in Vienna">
+                                <img class="img-responsive" src="Images/home_about/11-1920x1920.jpg"
+                                     alt="no image found">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-xs-6" style="padding-top: 15px; padding-bottom: 15px">
+                            <a href="Images/home_about/12-1920x1920.jpg" title="Amazing building of Gaudi, Barcelona">
+                                <img class="img-responsive" src="Images/home_about/12-1920x1920.jpg"
+                                     alt="no image found">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="container_button" style="width: 300px" href="about.html">learn more about me</a>
+        </div>
+    </div>
+</div>
+
+<!-- *********************     blog container     ****************************************************************** -->
+<div class="container-fluid">
+    <div class="row" style="background-color: #EDEEEF; height: auto">
+        <div class="container">
+            <p class="container_header">Blog. Coming soon...</p>
+            <div class="container">
+                <p style="font-size: 18px; font-family: 'Dosis', sans-serif;"></p>
+            </div>
+            <a class="container_button" style="width: 130px" href="blog.html">about</a>
+        </div>
+    </div>
+</div>
+
+<!-- *********************     contact container     *************************************************************** -->
+<div class="container-fluid">
+    <div class="row" id="contact_picture">
+        <div class="container">
+            <p class="quote" style="font-size: 25px; color: white; padding-top: 100px; text-align: center">
+                Have a question, any suggestion, or do you want just to say "Hello"?
+            </p>
+            <p class="contact">Contact me today</p>
+            <a class="contact_button" style="width: 190px" href="contact.html">contact me</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- *********************     credentials container     *********************************************************** -->
+<div class="container-fluid">
+    <div class="row" style="background-color: #26262a ; height: auto">
+        <div class="credentials" style="margin: auto; margin-top: 70px; width: 620px">
+            <a class="credentials_button" href="index.html">home</a>
+            <a class="credentials_button" href="resume.html">resume</a>
+            <a class="credentials_button" href="portfolio.html">portfolio</a>
+            <a class="credentials_button" href="about.html">about</a>
+            <a class="credentials_button" href="blog.html">blog</a>
+            <a class="credentials_button" href="contact.html">contact</a>
+        </div>
+        <div class="credentials_mobile">
+            <div style="margin: auto; margin-top: 50px; width: 320px">
+                <a class="credentials_button" href="index.html">home</a>
+                <a class="credentials_button" href="resume.html">resume</a>
+                <a class="credentials_button" href="portfolio.html">portfolio</a>
+            </div>
+            <div style="margin: auto; margin-top: 30px; width: 300px">
+                <a class="credentials_button" href="about.html">about</a>
+                <a class="credentials_button" href="blog.html">blog</a>
+                <a class="credentials_button" href="contact.html">contact</a>
+            </div>
+        </div>
+        <div class="socials" style="margin: auto ;margin-top: 50px; width: 355px; height: 50px">
+            <a href="https://www.facebook.com/profile.php?id=100007197131677"
+               class="socials_button fa fa-facebook-official fa-2x" aria-hidden="true"></a>
+            <a href="https://github.com/asuvorkov" class="socials_button fa fa-github fa-2x" aria-hidden="true"></a>
+            <a href="mailto:andrey.suvorkov@gmail.com" class="socials_button fa fa-envelope fa-2x"
+               aria-hidden="true"></a>
+            <a href="https://vk.com/asuvorkov" class="socials_button fa fa-vk fa-2x" aria-hidden="true"></a>
+            <a href="https://www.linkedin.com/in/andrei-suvorkov/" class="socials_button fa fa-linkedin fa-2x"
+               aria-hidden="true"></a>
+            <a href="https://stackoverflow.com/users/8625512/andrei-suvorkov"
+               class="socials_button fa fa-stack-overflow fa-2x" aria-hidden="true"></a>
+        </div>
+        <p class="made_by">
+            © 2017 Andrei Suvorkov. Software Developer.
+        </p>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/Default%20JS/jquery-3.2.1.min.js"></script>
+<script src="js/Default%20JS/bootstrap.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/blog.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/magnific.js"></script>
+<script src="https://use.fontawesome.com/a3e5413e1b.js"></script>
+</body>
+</html>
+
