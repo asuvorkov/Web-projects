@@ -1,11 +1,11 @@
 (function () {
     /* Main container nav menu and text appearance */
     $(document).ready(function(){
-        setTimeout ("$('#main_text').fadeIn('slow');", 1500);
-        setTimeout ("$ ('#download').css ('display', 'block');", 2000);
-        setTimeout("$('#download').addClass('flipInY');", 2000);
-        setTimeout ("$ ('#main_picture div.animated').css ('display', 'block');", 2500);
-        setTimeout("$('#main_picture div.animated').addClass('fadeInDown');", 2500);
+        setTimeout ("$('#main_text').fadeIn('slow');", 1000);
+        setTimeout ("$ ('#download').css ('display', 'block');", 1500);
+        setTimeout("$('#download').addClass('flipInY');", 1500);
+        setTimeout ("$ ('#main_picture div.animated').css ('display', 'block');", 2000);
+        setTimeout("$('#main_picture div.animated').addClass('fadeInDown');", 2000);
     });
 
     /* Hamburger button controller */
