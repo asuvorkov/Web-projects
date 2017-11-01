@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+.row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.row { display: inline-block; }
+/* start commented backslash hack \*/
+* html .row { height: 1%; }
+.row { display: block; }
+/* close commented backslash hack */
+
+
+/* Navigation styles */
+#main_picture {
+    background-image: url(Images/contact1920-1280.jpg);
+    /* Set a specific height */
+    min-height: 800px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hamburger_collapse {
+    margin-top: 80px;
+    margin-right: 25px;
+    position: absolute;
+}
+.navigation{
+    height: 80px;
+}
+.navigation-mobile {
+    display: none;
+}
+.navigation_button, .navigation_button:focus{
+    float: right;
+    border: none;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 13px 20px;
+    margin: 20px 0 0 10px;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+.navigation_button:hover {
+    transition: 0.7s;
+    color: #999;
+    text-decoration: none;
+}
+.navigation_button_mobile{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+.navigation_button_mobile:hover {
+    transition: 0.2s;
+    color: #999;
+    text-decoration: none;
+}
+.well ul {
+    padding-left: 0;
+}
+.slogan {
+    padding-top: 280px;
+    padding-bottom: 140px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+.quote {
+    font-size: 25px;
+    font-family: 'Courgette', cursive;
+}
+#main_text {
+    display: none;
+}
+
+/* contact container styles ****************/
+.container_header {
+    font-family: 'Merienda One', cursive;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.container_button, .container_button:focus {
+    width: 220px;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #0f0f0f;
+    background-color: transparent;
+    display: block;
+    padding: 10px 0px 10px 0px;
+    color: #0f0f0f;
+    transition: 0.5s;
+}
+.container_button:hover {
+    text-decoration: none;
+    background-color: #0f0f0f;
+    color: white;
+    transition: 0.5s;
+}
+.socials, .socials:focus {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.socials:hover {
+    text-decoration: none;
+    color: #999;
+    transition: 0.3s;
+    padding-bottom: 15px;
+}
+
+
+/* credentials container styles ***********/
+.credentials_button, .credentials_button:focus {
+    border: none;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 13px 20px;
+    margin: 20px 0 0 10px;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+.credentials_button:hover {
+    transition: 0.7s;
+    color: #999;
+    text-decoration: none;
+}
+.credentials_mobile {
+    display: none;
+}
+.socials_button, .socials_button:focus {
+    text-decoration: none;
+    color: #999;
+    transition: 0.3s;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.socials_button:hover {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    padding-bottom: 15px;
+}
+.made_by {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+    margin: 30px 0 -15px 0;
+    padding-bottom: 70px;
+    color: white
+}
+
+
+/* Media queries */
+@media (max-width: 1100px) {
+    .slogan {
+        padding-top: 260px;
+        padding-bottom: 90px;
+    }
+}
+@media (max-width: 992px) {
+    #main_picture {
+        min-height: 700px;
+    }
+    .navigation{
+        display: none;
+    }
+    .navigation-mobile{
+        display: block;
+    }
+    .slogan {
+        padding-top: 200px;
+        padding-bottom: 60px;
+    }
+}
+@media (max-width: 768px) {
+    .slogan {
+        font-size: 35px;
+        padding-top: 250px;
+    }
+    .quote {
+        font-size: 20px;
+        font-family: 'Courgette', cursive;
+    }
+}
+@media (max-width: 650px) {
+    .slogan {
+        font-size: 25px;
+        padding-top: 280px;
+    }
+    .quote {
+        font-size: 14px;
+        font-family: 'Courgette', cursive;
+    }
+    .credentials {
+        display: none;
+    }
+    .credentials_mobile {
+        display: block;
+    }
+}
