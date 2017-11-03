@@ -18,14 +18,11 @@
 
 /* Navigation styles */
 #main_picture {
-    background-image: url(Images/home1920-1280-contrast.jpg);
     /* Set a specific height */
     min-height: 800px;
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(Images/home1920-1280-contrast.jpg) no-repeat fixed center;
     background-size: cover;
 }
 #hamburger_collapse {
@@ -95,19 +92,15 @@
     margin-bottom: 50px;
 }
 .container_button, .container_button:focus {
-    margin: auto;
     text-decoration: none;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin: 50px auto 100px;
     text-transform: uppercase;
     font-size: 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #0f0f0f;
+    border: 2px solid #0f0f0f;
     background-color: transparent;
     display: block;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0 10px 0;
     color: #0f0f0f;
     transition: 0.5s;
 }
@@ -120,12 +113,11 @@
 
 /* portfolio container styles *************/
 .project_1, .project_2, .project_3 {
-    background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
     background-size:cover;
-    background-position:center;
+    background: no-repeat center;
     width: 30%;
     float: left;
     height: 400px;
@@ -167,9 +159,7 @@
     margin-bottom: 50px;
     text-transform: uppercase;
     font-size: 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: white;
+    border: 2px solid white;
     background-color: transparent;
     display: block;
     padding: 10px 20px 10px 20px;
@@ -185,30 +175,163 @@
 
 /* about container styles *****************/
 #about_pic {
-    background-image: url(Images/about_main.jpg);
     /* Set a specific height */
     min-height: 500px;
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(Images/about_main.jpg) no-repeat fixed center;
     background-size: cover;
 }
 
 /* blog container styles ******************/
-
+.container_header {
+    font-family: 'Merienda One', cursive;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.container_button, .container_button:focus {
+    text-decoration: none;
+    text-align: center;
+    margin: 50px auto 100px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 2px solid #0f0f0f;
+    background-color: transparent;
+    display: block;
+    padding: 10px 0 10px 0;
+    color: #0f0f0f;
+    transition: 0.5s;
+}
+.container_button:hover {
+    text-decoration: none;
+    background-color: #0f0f0f;
+    color: white;
+    transition: 0.5s;
+}
+.project_1, .project_2, .project_3 {
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background: no-repeat center;
+    width: 30%;
+    float: left;
+    height: 400px;
+}
+.under_project_1, .under_project_2, .under_project_3 {
+    float: left;
+    width: 30%;
+}
+.under_project_mob_1, .under_project_mob_2, .under_project_mob_3 {
+    float: left;
+    margin-left: 10%;
+    width: 80%;
+    display: none;
+}
+.project_1, .under_project_1{
+    margin-left: 2%;
+}
+.project_2, .under_project_2 {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.project_3, .under_project_3 {
+    margin-right: 2%;
+}
+.project_1:hover, .project_2:hover, .project_3:hover{
+    box-shadow:0 0 0 400px rgba(0, 0, 0, 0.8) inset;
+    transition: 0.3s;
+}
+.project_wrapper_1, .project_wrapper_2, .project_wrapper_3  {
+    display: none;
+}
+.project_text_1 {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Courgette', cursive;
+}
+.project_text_2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Merienda One', cursive;
+}
+.project_button, .project_button:focus {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    display: block;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    transition: 0.3s;
+}
+.project_button:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #0f0f0f;
+    transition: 0.3s;
+}
+.post_name {
+    font-size: 20px;
+    font-family: 'Merienda One', cursive;
+}
+.post_theme {
+    color: #999;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.post_text {
+    font-size: 16px;
+    font-family: 'Dosis', sans-serif;
+}
+.read_more {
+    text-decoration: none;
+    color: #0b0b0b;
+    transition: 0.2s;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.read_more:focus {
+    outline: 0;
+    text-decoration: none;
+}
+.read_more:hover {
+    text-decoration: none;
+    color: #999999;
+    transition: 0.2s;
+}
+.post_link {
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 16px;
+}
+.post_link:focus {
+    outline: 0;
+    text-decoration: none;
+}
+.post_link:hover {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
 
 /* contact container styles ***************/
 #contact_picture {
-    background-image: url(Images/contact_main.jpg);
     /* Set a specific height */
     min-height: 500px;
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(Images/contact_main.jpg) no-repeat fixed center;
     background-size: cover;
 }
 .contact {
@@ -221,19 +344,15 @@
     text-transform: uppercase;
 }
 .contact_button, .contact_button:focus {
-    margin: auto;
     text-decoration: none;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin: 50px auto 100px;
     text-transform: uppercase;
     font-size: 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: white;
+    border: 2px solid white;
     background-color: transparent;
     display: block;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0 10px 0;
     color: white;
     transition: 0.5s;
 }
@@ -344,6 +463,12 @@
     }
     .project_button {
         font-size: 20px;
+    }
+    .under_project_1, .under_project_2, .under_project_3 {
+        display: none;
+    }
+    .under_project_mob_1, .under_project_mob_2, .under_project_mob_3 {
+        display: block;
     }
 }
 @media (max-width: 650px) {

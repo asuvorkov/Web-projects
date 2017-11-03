@@ -1,4 +1,9 @@
 (function () {
+    if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+        $ (".slogan").css ("padding-top", 150);
+    }
+
+
     /* Main container nav menu and text appearance */
     $(document).ready(function(){
         setTimeout ("$('#main_text').fadeIn('slow');", 1000);

@@ -276,7 +276,7 @@
         padding-top: 260px;
         padding-bottom: 90px;
     }
-    .project_1, .project_2, .project_3 {
+    .project_1, .project_2, .project_3, .project_4, .project_5, .project_6, .project_7, .project_8 {
         height: 300px;
     }
     .project_text_1{
@@ -317,11 +317,11 @@
         font-size: 20px;
         font-family: 'Courgette', cursive;
     }
-    .project_1, .project_2, .project_3 {
+    .project_1, .project_2, .project_3, .project_4, .project_5, .project_6, .project_7, .project_8 {
         width: 80%;
         margin-left: 10%;
     }
-    .project_2, .project_3 {
+    .project_2, .project_3, .project_4, .project_5, .project_6, .project_7, .project_8 {
         margin-top: 50px;
     }
     .project_button {

@@ -47,4 +47,10 @@
         });
     });
 
+    /* project animation */
+    $('.project_wrapper_1').hide();
+    $('.project_1').hover(function() {
+        $('.project_wrapper_1').toggle();
+    });
+
 })();
