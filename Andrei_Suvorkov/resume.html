@@ -27,52 +27,58 @@
 <body>
 
 <!-- *********************     navigation     ********************************************************************** -->
-<div class="container-fluid">
-    <div class="row" id="main_picture">
-        <div class="col-md-1 col-sm-2 col-xs-4" style="padding-top: 15px">
-            <img src="Images/logo.png" alt="no img">
-        </div>
-        <div class="col-md-11 col-sm-10 col-xs-8 animated" style="display: none">
-            <div class="navigation">
-                <a class="navigation_button" href="contact.html">contact</a>
-                <a class="navigation_button" href="blog.html">blog</a>
-                <a class="navigation_button" href="about.html">about</a>
-                <a class="navigation_button" href="portfolio.html">portfolio</a>
-                <a class="navigation_button" href="resume.html">resume</a>
-                <a class="navigation_button" href="index.html">home</a>
+<section class="bg-img bg-img1">
+    <div class="container-fluid">
+        <div class="row" id="main_picture">
+            <div class="col-md-1 col-sm-2 col-xs-4" style="padding-top: 15px">
+                <img src="Images/logo.png" alt="no img">
             </div>
+            <div class="col-md-11 col-sm-10 col-xs-8 animated" style="display: none">
+                <div class="navigation">
+                    <a class="navigation_button" href="contact.html">contact</a>
+                    <a class="navigation_button" href="blog.html">blog</a>
+                    <a class="navigation_button" href="about.html">about</a>
+                    <a class="navigation_button" href="portfolio.html">portfolio</a>
+                    <a class="navigation_button" href="resume.html">resume</a>
+                    <a class="navigation_button" href="index.html">home</a>
+                </div>
 
-            <div class="navigation-mobile" style="float: right; margin-top: 3px">
-                <button id="hamburger" class="c-hamburger c-hamburger--htx" type="button" data-toggle="collapse"
-                        data-target="#hamburger_collapse" aria-expanded="false" aria-controls="collapseExample">
-                    <span>toggle menu</span>
-                </button>
-                <div class="collapse navbar-fixed-top" id="hamburger_collapse">
-                    <div class="well">
-                        <ul><a class="navigation_button_mobile" href="index.html">home</a></ul>
-                        <ul><a class="navigation_button_mobile" href="resume.html">resume</a></ul>
-                        <ul><a class="navigation_button_mobile" href="portfolio.html">portfolio</a></ul>
-                        <ul><a class="navigation_button_mobile" href="about.html">about</a></ul>
-                        <ul><a class="navigation_button_mobile" href="blog.html">blog</a></ul>
-                        <ul style="margin-bottom: 0"><a class="navigation_button_mobile" href="contact.html">contact</a>
-                        </ul>
+                <div class="navigation-mobile" style="float: right; margin-top: 3px">
+                    <button id="hamburger" class="c-hamburger c-hamburger--htx" type="button" data-toggle="collapse"
+                            data-target="#hamburger_collapse" aria-expanded="false" aria-controls="collapseExample">
+                        <span>toggle menu</span>
+                    </button>
+                    <div class="collapse navbar-fixed-top" id="hamburger_collapse">
+                        <div class="well">
+                            <ul><a class="navigation_button_mobile" href="index.html">home</a></ul>
+                            <ul><a class="navigation_button_mobile" href="resume.html">resume</a></ul>
+                            <ul><a class="navigation_button_mobile" href="portfolio.html">portfolio</a></ul>
+                            <ul><a class="navigation_button_mobile" href="about.html">about</a></ul>
+                            <ul><a class="navigation_button_mobile" href="blog.html">blog</a></ul>
+                            <ul style="margin-bottom: 0"><a class="navigation_button_mobile"
+                                                            href="contact.html">contact</a>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="slogan">
-                <p class="quote">"Work hard in silence, let your success make the noise"
-                    <br>
-                <p class="quote" style="padding-bottom: 40px">Frank Ocean</p></p>
-                <p id="main_text" style="font-family: 'Merienda One', cursive; text-transform: uppercase">Knowledge and
-                    Experience</p>
-                <a id="download" class="download_button animated" style="width: 260px" href="Andrei%20Suvorkov%20CV.pdf"
-                   download="Andrei Suvorkov CV.pdf">download resume</a>
+            <div class="container">
+                <div class="slogan">
+                    <p class="quote">"Work hard in silence, let your success make the noise"
+                        <br>
+                    <p class="quote" style="padding-bottom: 40px">Frank Ocean</p></p>
+                    <p id="main_text" style="font-family: 'Merienda One', cursive; text-transform: uppercase">Knowledge
+                        and
+                        Experience</p>
+                    <a id="download" class="download_button animated" style="width: 260px"
+                       href="Andrei%20Suvorkov%20CV.pdf"
+                       download="Andrei Suvorkov CV.pdf">download resume</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+
 
 <!-- *********************     employment container     ************************************************************ -->
 <div class="container-fluid">
@@ -139,7 +145,7 @@
 
 <!-- *********************     education container     ************************************************************* -->
 <div class="container-fluid">
-    <div class="row" style="height: auto">
+    <div class="row" style="background-color: white ;height: auto">
         <div class="container">
             <p class="container_header">Education</p>
             <div class="container" style="margin-bottom: 50px">
@@ -199,7 +205,7 @@
 
 <!-- *********************     featured skills container     ******************************************************* -->
 <div class="container-fluid">
-    <div class="row" style="height: auto">
+    <div class="row" style="background-color: white ;height: auto">
         <div class="container">
             <p class="container_header">Featured skills</p>
             <div class="container" style="margin-bottom: 100px">
@@ -555,7 +561,7 @@
 
 <!-- *********************     certifications container     ******************************************************** -->
 <div class="container-fluid">
-    <div class="row" style="height: auto">
+    <div class="row" style="background-color: white ;height: auto">
         <div class="container">
             <p class="container_header">Certification</p>
             <div class="container-fluid">
@@ -585,18 +591,20 @@
 </div>
 
 <!-- *********************     contact container     *************************************************************** -->
-<div class="container-fluid">
-    <div class="row" id="contact_picture">
-        <div class="container">
-            <p class="quote" style="font-size: 25px; color: white; padding-top: 100px; text-align: center">
-                Impressed? Now that you know what I've done and what I could do for you, feel free to reach out and
-                start a conversation.
-            </p>
-            <p class="contact">Hire me today</p>
-            <a class="contact_button" style="width: 190px" href="contact.html">contact me</a>
+<section style="height: 75vh">
+    <div class="container-fluid">
+        <div class="row" id="contact_picture">
+            <div class="container">
+                <p class="quote" style="color: white; padding-top: 100px; text-align: center">
+                    Impressed? Now that you know what I've done and what I could do for you, feel free to reach out and
+                    start a conversation.
+                </p>
+                <p class="contact">Hire me today</p>
+                <a class="contact_button" style="width: 190px" href="contact.html">contact me</a>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- *********************     credentials container     *********************************************************** -->
 <div class="container-fluid">

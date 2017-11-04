@@ -27,55 +27,58 @@
 <body>
 
 <!-- *********************     navigation     ********************************************************************** -->
-<div class="container-fluid">
-    <div class="row" id="main_picture">
-        <div class="col-md-1 col-sm-2 col-xs-4" style="padding-top: 15px">
-            <img src="Images/logo.png" alt="no img">
-        </div>
-        <div class="col-md-11 col-sm-10 col-xs-8 animated" style="display: none">
-            <div class="navigation">
-                <a class="navigation_button" href="contact.html">contact</a>
-                <a class="navigation_button" href="blog.html">blog</a>
-                <a class="navigation_button" href="about.html">about</a>
-                <a class="navigation_button" href="portfolio.html">portfolio</a>
-                <a class="navigation_button" href="resume.html">resume</a>
-                <a class="navigation_button" href="index.html">home</a>
+<section class="bg-img bg-img1">
+    <div class="container-fluid">
+        <div class="row" id="main_picture">
+            <div class="col-md-1 col-sm-2 col-xs-4" style="padding-top: 15px">
+                <img src="Images/logo.png" alt="no img">
             </div>
+            <div class="col-md-11 col-sm-10 col-xs-8 animated" style="display: none">
+                <div class="navigation">
+                    <a class="navigation_button" href="contact.html">contact</a>
+                    <a class="navigation_button" href="blog.html">blog</a>
+                    <a class="navigation_button" href="about.html">about</a>
+                    <a class="navigation_button" href="portfolio.html">portfolio</a>
+                    <a class="navigation_button" href="resume.html">resume</a>
+                    <a class="navigation_button" href="index.html">home</a>
+                </div>
 
-            <div class="navigation-mobile" style="float: right; margin-top: 3px">
-                <button id="hamburger" class="c-hamburger c-hamburger--htx" type="button" data-toggle="collapse"
-                        data-target="#hamburger_collapse" aria-expanded="false" aria-controls="collapseExample">
-                    <span>toggle menu</span>
-                </button>
-                <div class="collapse navbar-fixed-top" id="hamburger_collapse">
-                    <div class="well">
-                        <ul><a class="navigation_button_mobile" href="index.html">home</a></ul>
-                        <ul><a class="navigation_button_mobile" href="resume.html">resume</a></ul>
-                        <ul><a class="navigation_button_mobile" href="portfolio.html">portfolio</a></ul>
-                        <ul><a class="navigation_button_mobile" href="about.html">about</a></ul>
-                        <ul><a class="navigation_button_mobile" href="blog.html">blog</a></ul>
-                        <ul style="margin-bottom: 0"><a class="navigation_button_mobile" href="contact.html">contact</a>
-                        </ul>
+                <div class="navigation-mobile" style="float: right; margin-top: 3px">
+                    <button id="hamburger" class="c-hamburger c-hamburger--htx" type="button" data-toggle="collapse"
+                            data-target="#hamburger_collapse" aria-expanded="false" aria-controls="collapseExample">
+                        <span>toggle menu</span>
+                    </button>
+                    <div class="collapse navbar-fixed-top" id="hamburger_collapse">
+                        <div class="well">
+                            <ul><a class="navigation_button_mobile" href="index.html">home</a></ul>
+                            <ul><a class="navigation_button_mobile" href="resume.html">resume</a></ul>
+                            <ul><a class="navigation_button_mobile" href="portfolio.html">portfolio</a></ul>
+                            <ul><a class="navigation_button_mobile" href="about.html">about</a></ul>
+                            <ul><a class="navigation_button_mobile" href="blog.html">blog</a></ul>
+                            <ul style="margin-bottom: 0"><a class="navigation_button_mobile" href="contact.html">contact</a>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="slogan">
-                <p class="quote">"Choose a job you love and you will never work a day in your life."
-                    <br>
-                <p class="quote" style="padding-bottom: 40px">Confucius</p></p>
-                <p id="main_text" style="font-family: 'Merienda One', cursive; text-transform: uppercase">Thoughts and
-                    experience share</p>
+            <div class="container">
+                <div class="slogan">
+                    <p class="quote">"Choose a job you love and you will never work a day in your life."
+                        <br>
+                    <p class="quote" style="padding-bottom: 40px">Confucius</p></p>
+                    <p id="main_text" style="font-family: 'Merienda One', cursive; text-transform: uppercase">Thoughts and
+                        experience share</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+
 
 
 <!-- *********************     blog container     ****************************************************************** -->
-<div class="container-fluid" style="margin-bottom: 100px">
-    <div class="row" style="height: auto">
+<div class="container-fluid">
+    <div class="row" style="background-color: white ;height: auto; padding-bottom: 100px">
         <div class="container">
             <p class="container_header">Blog posts</p>
             <div class="container">
@@ -177,6 +180,8 @@
 <div class="modal fade modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content" style="padding: 0 10px 30px 10px">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 50px"><span aria-hidden="true">&times;</span></button>
+            <p style="padding-top: 20px"></p>
             <p class="post_name" style="text-align: center; margin-top: 30px">AS finished</p>
             <p class="post_theme" style="text-align: center; margin: 20px 0 20px 0">Web projects - 01.11.2017</p>
             <p class="post_text">Today I have finished the development of my web site. But this is just a ready version
@@ -197,6 +202,8 @@
 <div class="modal fade modal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content" style="padding: 0 10px 30px 10px">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 50px"><span aria-hidden="true">&times;</span></button>
+            <p style="padding-top: 20px"></p>
             <p class="post_name" style="text-align: center; margin-top: 30px">My new work</p>
             <p class="post_theme" style="text-align: center; margin: 20px 0 20px 0">WORK - 01.10.2017</p>
             <p class="post_text">Today is officially my first day in the new company. Now I'm a programmer at <a
@@ -220,6 +227,8 @@
 <div class="modal fade modal3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content" style="padding: 0 10px 30px 10px">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 50px"><span aria-hidden="true">&times;</span></button>
+            <p style="padding-top: 20px"></p>
             <p class="post_name" style="text-align: center; margin-top: 30px">University</p>
             <p class="post_theme" style="text-align: center; margin: 20px 0 20px 0">STUDY - 16.10.2017</p>
             <p class="post_text">The <a class="post_link" href="http://www.hs-rm.de/en/">University of Applied Sciences RainMain</a> is located in the federal state of Hessen in its capital city of Wiesbaden, the same campus of computer science is located on the outskirts of the city right in the forest, which I was simply amazed. For the first time in my life I have seen a university that is literally in the woods and it is just wonderful! Forest clean fresh air and the beauty of autumn forest perfectly complement the school day on campus.</p>

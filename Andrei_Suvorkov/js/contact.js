@@ -4,6 +4,9 @@
         setTimeout ("$('#main_text').fadeIn('slow');", 1000);
         setTimeout ("$ ('#main_picture div.animated').css ('display', 'block');", 2000);
         setTimeout("$('#main_picture div.animated').addClass('fadeInDown');", 2000);
+        if (window.innerWidth < 992) {
+            setTimeout ("$ ('.slogan').css ('padding-top', 200);", 2000);
+        }
     });
 
     /* Hamburger button controller */

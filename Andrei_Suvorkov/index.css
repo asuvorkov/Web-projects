@@ -14,16 +14,30 @@
 * html .row { height: 1%; }
 .row { display: block; }
 /* close commented backslash hack */
-
+.modal {
+    top: 70px;
+}
 
 /* Navigation styles */
-#main_picture {
-    /* Set a specific height */
-    min-height: 800px;
-
-    /* Create the parallax scrolling effect */
-    background: url(Images/home1920-1280-contrast.jpg) no-repeat fixed center;
+section{
+    height: 100vh;
+}
+.bg-img::before {
+    position: fixed;
+    content: ' ';
+    display: block;
+    width: 100vw;
+    min-height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: center;
     background-size: cover;
+    z-index: -10;
+}
+.bg-img1:before {
+    background-image: url('Images/home1920-1280-contrast.jpg');
 }
 #hamburger_collapse {
     margin-top: 80px;
@@ -174,13 +188,12 @@
 }
 
 /* about container styles *****************/
-#about_pic {
-    /* Set a specific height */
-    min-height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background: url(Images/about_main.jpg) no-repeat fixed center;
-    background-size: cover;
+section .bg-img2 {
+    height: 500px;
+}
+.bg-img2::before {
+    height: 500px;
+    background-image: url(Images/about_main.jpg);
 }
 
 /* blog container styles ******************/
@@ -326,13 +339,8 @@
 }
 
 /* contact container styles ***************/
-#contact_picture {
-    /* Set a specific height */
-    min-height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background: url(Images/contact_main.jpg) no-repeat fixed center;
-    background-size: cover;
+.bg-img3::before {
+    background-image: url(Images/contact_main.jpg);
 }
 .contact {
     padding-top: 80px;
@@ -477,8 +485,11 @@
         padding-top: 280px;
     }
     .quote {
-        font-size: 14px;
+        font-size: 16px;
         font-family: 'Courgette', cursive;
+    }
+    .contact {
+        font-size: 25px;
     }
     .credentials {
         display: none;
