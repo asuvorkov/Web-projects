@@ -1,87 +1,36 @@
 (function () {
-    window.onload = function() {
-
-        // Alternate Background Page with scrolling content (Bg Pages are odd#s)
-        var $bgImg = $('.bg-img');
-        var $nav = $('nav');
-        var winw = window.innerWidth;
-        var winh = window.innerHeight;
-        var page1Bottom;
-        var page3Top;
-        var page3Bottom;
-        var page5Top;
-        var page5Bottom;
-        if (winw < 768){
-            console.log("1");
-            page1Bottom = winh;
-            page3Top = winh * 1.5;
-            page3Bottom = winh * 5.8;
-            page5Top = winh * 5.85;
-            page5Bottom = winh * 6;
-        } else {
-            if (winw > 768 && winw < 1200){
-                console.log("2");
-                page1Bottom = winh;
-                page3Top = winh * 1.5;
-                page3Bottom = winh * 4;
-                page5Top = winh * 4;
-                page5Bottom = winh * 6;
-            } else {
-                console.log("3");
-                page1Bottom = winh;
-                page3Top = winh;
-                page3Bottom = winh * 4;
-                page5Top = winh * 4;
-                page5Bottom = winh * 6;
-            }
+    var section1 = $('#section1');
+    var section2 = $('#section2');
+    var section3 = $('#section3');
+    $(window).on('scroll', function() {
+        if (section1.visible(true)) {
+            console.log("section1");
+            section1.addClass('bg-img');
+            section1.addClass('bg-img1');
+            section2.removeClass('bg-img');
+            section2.removeClass('bg-img1');
+            section3.removeClass('bg-img');
+            section3.removeClass('bg-img1');
         }
-        var scrollPos = 0;
-        var page = 1;
-
-        $(window).on('scroll', function() {
-
-            scrollPos = Number($(window).scrollTop().toFixed(2));
-            page = Math.floor(Number(scrollPos / winh) +1);
-            if (scrollPos >= 0 && scrollPos < page1Bottom ) {
-                if (! $bgImg.hasClass('bg-img1')) {
-
-                    removeBg( $bgImg, 2, 3, 1 ); // element, low, high, current
-                    $bgImg.addClass('bg-img1');
-                }
-            } else if (scrollPos >= page3Top && scrollPos <= page3Bottom) {
-                if (! $bgImg.hasClass('bg-img2')) {
-
-                    removeBg( $bgImg, 1, 3, 2 ); // element, low, high, current
-                    $bgImg.addClass('bg-img2');
-                }
-            } else if (scrollPos >= page5Top && scrollPos <= page5Bottom) {
-                if (! $bgImg.hasClass('bg-img3')) {
-
-                    removeBg( $bgImg, 1, 2, 3 ); // element, low, high, current
-                    $bgImg.addClass('bg-img3');
-                }
-            }
-            $nav.html("Page# " + page + " window position: " + scrollPos);
-
-        });
-    }
-
-// This function was created to fix a problem where the mouse moves off the
-// screen, this results in improper removal of background image class. Fix
-// by removing any background class not applicable to current page.
-    function removeBg( el, low, high, current ) {
-        if (low > high || low <= 0 || high <= 0) {
-            console.log ("bad low/high parameters in removeBg");
+        if (section2.visible(true)) {
+            console.log("section2");
+            section2.addClass('bg-img');
+            section2.addClass('bg-img2');
+            section1.removeClass('bg-img');
+            section1.removeClass('bg-img1');
+            section3.removeClass('bg-img');
+            section3.removeClass('bg-img3');
         }
-        for (var i=low; i<=high; i++) {
-            if ( i != current ) { // avoid removing class we are trying to add
-                if (el.hasClass('bg-img' +i )) {
-                    el.removeClass('bg-img' +i );
-                }
-            }
+        if (section3.visible(true)) {
+            console.log("section3");
+            section3.addClass('bg-img');
+            section3.addClass('bg-img3');
+            section1.removeClass('bg-img');
+            section1.removeClass('bg-img1');
+            section2.removeClass('bg-img');
+            section2.removeClass('bg-img2');
         }
-    } // removeBg()
-
+    });
 
     /* Main container nav menu and text appearance */
     $(document).ready(function(){

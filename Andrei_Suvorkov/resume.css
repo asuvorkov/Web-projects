@@ -147,7 +147,7 @@ section{
 }
 
 /* contact container styles ***************/
-.bg-img3::before {
+.bg-img2::before {
     background-image: url(Images/contact_main.jpg);
 }
 .contact {
