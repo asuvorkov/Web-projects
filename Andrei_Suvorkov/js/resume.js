@@ -2,15 +2,13 @@
     var section1 = $('#section1');
     var section2 = $('#section2');
     $(window).on('scroll', function() {
-        if (section1.visible(true)) {
-            console.log("section1");
+        if (section1.visible(true) || $('.after_sec_1').visible(true)) {
             section1.addClass('bg-img');
             section1.addClass('bg-img1');
             section2.removeClass('bg-img');
             section2.removeClass('bg-img1');
         }
-        if (section2.visible(true)) {
-            console.log("section2");
+        if (section2.visible(true) || $('.before_sec_2').visible(true)) {
             section2.addClass('bg-img');
             section2.addClass('bg-img2');
             section1.removeClass('bg-img');
