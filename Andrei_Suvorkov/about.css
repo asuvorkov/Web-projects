@@ -404,4 +404,8 @@ section .bg-img2 {
     .credentials_mobile {
         display: block;
     }
+    .project_1 {
+        margin-left: 5%;
+        width: 90%;
+    }
 }

@@ -224,7 +224,7 @@ section .bg-img2 {
     color: white;
     transition: 0.5s;
 }
-.project_1, .project_2, .project_3 {
+.blog_1, .blog_2, .blog_3 {
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
@@ -244,21 +244,21 @@ section .bg-img2 {
     width: 80%;
     display: none;
 }
-.project_1, .under_project_1{
+.blog_1, .under_project_1{
     margin-left: 2%;
 }
-.project_2, .under_project_2 {
+.blog_2, .under_project_2 {
     margin-left: 3%;
     margin-right: 3%;
 }
-.project_3, .under_project_3 {
+.blog_3, .under_project_3 {
     margin-right: 2%;
 }
-.project_1:hover, .project_2:hover, .project_3:hover{
+.blog_1:hover, .blog_2:hover, .blog_3:hover{
     box-shadow:0 0 0 400px rgba(0, 0, 0, 0.8) inset;
     transition: 0.3s;
 }
-.project_wrapper_1, .project_wrapper_2, .project_wrapper_3  {
+.blog_wrapper_1, .blog_wrapper_2, .blog_wrapper_3  {
     display: none;
 }
 .project_text_1 {
@@ -421,7 +421,7 @@ section .bg-img2 {
         padding-top: 260px;
         padding-bottom: 90px;
     }
-    .project_1, .project_2, .project_3 {
+    .project_1, .project_2, .project_3, .blog_1, .blog_2, .blog_3 {
         height: 300px;
     }
     .project_text_1{
@@ -462,11 +462,11 @@ section .bg-img2 {
         font-size: 20px;
         font-family: 'Courgette', cursive;
     }
-    .project_1, .project_2, .project_3 {
+    .project_1, .project_2, .project_3, .blog_1, .blog_2, .blog_3 {
         width: 80%;
         margin-left: 10%;
     }
-    .project_2, .project_3 {
+    .project_2, .project_3, .blog_2, .blog_3 {
         margin-top: 50px;
     }
     .project_button {

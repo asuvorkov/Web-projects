@@ -74,6 +74,20 @@
         $('.project_wrapper_3').toggle();
     });
 
+    /* blog posts animation */
+    $('.blog_wrapper_1').hide();
+    $('.blog_1').hover(function() {
+        $('.blog_wrapper_1').toggle();
+    });
+    $('.blog_wrapper_2').hide();
+    $('.blog_2').hover(function() {
+        $('.blog_wrapper_2').toggle();
+    });
+    $('.blog_wrapper_3').hide();
+    $('.blog_3').hover(function() {
+        $('.blog_wrapper_3').toggle();
+    });
+
     /* about popup carousel */
     $(document).ready(function() {
         $('.popup-gallery').magnificPopup({
