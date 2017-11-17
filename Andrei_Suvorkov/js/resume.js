@@ -56,7 +56,7 @@
         $(this).find(".fa").stop().animate({padding:3},speed);
     },function(){
         $(this).find(".fa").stop().animate({padding:0},speed);
-    })
+    });
     $('#skills_2 .container_text').hover(function(){
         $(this).find(".fa").stop().animate({padding:3},speed);
     },function(){

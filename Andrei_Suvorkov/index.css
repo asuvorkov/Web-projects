@@ -390,6 +390,9 @@ section .bg-img2 {
 .credentials_mobile {
     display: none;
 }
+#socials_mobile {
+    display: none;
+}
 .socials_button, .socials_button:focus {
     text-decoration: none;
     color: #999;
@@ -496,5 +499,13 @@ section .bg-img2 {
     }
     .credentials_mobile {
         display: block;
+    }
+}
+@media (max-width: 500px) {
+    #socials_mobile {
+        display: block;
+    }
+    #socials {
+        display: none;
     }
 }

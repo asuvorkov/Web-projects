@@ -95,6 +95,9 @@ section{
 }
 
 /* contact container styles ****************/
+#form {
+    padding-left: 1px;
+}
 .container_header {
     font-family: 'Merienda One', cursive;
     text-transform: uppercase;
@@ -105,19 +108,15 @@ section{
 }
 .container_button, .container_button:focus {
     width: 220px;
-    margin: auto;
     text-decoration: none;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin: 50px auto 100px;
     text-transform: uppercase;
     font-size: 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #0f0f0f;
+    border: 2px solid #0f0f0f;
     background-color: transparent;
     display: block;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0 10px 0;
     color: #0f0f0f;
     transition: 0.5s;
 }
@@ -159,6 +158,9 @@ section{
     text-decoration: none;
 }
 .credentials_mobile {
+    display: none;
+}
+#socials_mobile {
     display: none;
 }
 .socials_button, .socials_button:focus {
@@ -205,6 +207,10 @@ section{
         padding-top: 200px;
         padding-bottom: 60px;
     }
+    #form {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 @media (max-width: 768px) {
     .slogan {
@@ -214,6 +220,10 @@ section{
     .quote {
         font-size: 20px;
         font-family: 'Courgette', cursive;
+    }
+    #form {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 @media (max-width: 650px) {
@@ -230,5 +240,13 @@ section{
     }
     .credentials_mobile {
         display: block;
+    }
+}
+@media (max-width: 500px) {
+    #socials_mobile {
+        display: block;
+    }
+    #socials {
+        display: none;
     }
 }
