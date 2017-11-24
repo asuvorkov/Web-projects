@@ -126,7 +126,7 @@ section{
     color: white;
     transition: 0.5s;
 }
-.project_1, .project_2, .project_3, .project_4, .project_5, .project_6, .project_7, .project_8, .project_9{
+.project {
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -136,22 +136,14 @@ section{
     width: 30%;
     float: left;
     height: 400px;
+    margin-left: 2.655%;
+    margin-top: 50px;
 }
-.project_1, .project_4, .project_7{
-    margin-left: 2%;
-}
-.project_2, .project_5, .project_8 {
-    margin-left: 3%;
-    margin-right: 3%;
-}
-.project_3, .project_6, .project_9 {
-    margin-right: 2%;
-}
-.project_1:hover, .project_2:hover, .project_3:hover, .project_4:hover, .project_5:hover, .project_6:hover, .project_7:hover, .project_8:hover, .project_9:hover{
+.project:hover {
     box-shadow:0 0 0 400px rgba(0, 0, 0, 0.8) inset;
     transition: 0.3s;
 }
-.project_wrapper_1, .project_wrapper_2, .project_wrapper_3, .project_wrapper_4, .project_wrapper_5, .project_wrapper_6, .project_wrapper_7, .project_wrapper_8, .project_wrapper_9  {
+.project_wrapper {
     display: none;
 }
 .project_text_1 {
@@ -280,15 +272,15 @@ section{
         padding-top: 260px;
         padding-bottom: 90px;
     }
-    .project_1, .project_2, .project_3, .project_4, .project_5, .project_6, .project_7, .project_8 {
+    .project {
         height: 300px;
     }
     .project_text_1{
         margin-top: 50px;
-        font-size: 20px;
+        font-size: 14px;
     }
     .project_text_2 {
-        font-size: 30px;
+        font-size: 24px;
     }
     .project_button {
         margin-top: 80px;
@@ -321,12 +313,9 @@ section{
         font-size: 20px;
         font-family: 'Courgette', cursive;
     }
-    .project_1, .project_2, .project_3, .project_4, .project_5, .project_6, .project_7, .project_8 {
-        width: 80%;
-        margin-left: 10%;
-    }
-    .project_2, .project_3, .project_4, .project_5, .project_6, .project_7, .project_8 {
-        margin-top: 50px;
+    .project {
+        width: 400px;
+        margin-left: calc(50% - 200px);
     }
     .project_button {
         font-size: 20px;
@@ -354,5 +343,12 @@ section{
     }
     #socials {
         display: none;
+    }
+    .project {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .project_button {
+        font-size: 12px;
     }
 }
