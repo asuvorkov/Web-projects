@@ -46,18 +46,13 @@
         });
     }
 
-    /* portfolio projects animation */
-    $('.project_wrapper_1').hide();
-    $('.project_1').hover(function() {
-        $('.project_wrapper_1').toggle();
-    });
-    $('.project_wrapper_2').hide();
-    $('.project_2').hover(function() {
-        $('.project_wrapper_2').toggle();
-    });
-    $('.project_wrapper_3').hide();
-    $('.project_3').hover(function() {
-        $('.project_wrapper_3').toggle();
-    });
 
+
+
+    /* portfolio projects animation */
+    /* portfolio projects animation */
+    $('.project_wrapper').hide();
+    $('.project').hover(function() {
+        $(this).find('.project_wrapper').toggle();
+    });
 })();

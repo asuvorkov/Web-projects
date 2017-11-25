@@ -128,7 +128,7 @@ section{
     color: white;
     transition: 0.5s;
 }
-.project_1, .project_2, .project_3 {
+.project {
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -139,31 +139,24 @@ section{
     float: left;
     height: 400px;
 }
-.under_project_1, .under_project_2, .under_project_3 {
+.under_project {
     float: left;
     width: 30%;
 }
-.under_project_mob_1, .under_project_mob_2, .under_project_mob_3 {
+.under_project_mob {
     float: left;
     margin-left: 10%;
     width: 80%;
     display: none;
 }
-.project_1, .under_project_1{
+.project, .under_project{
     margin-left: 2%;
 }
-.project_2, .under_project_2 {
-    margin-left: 3%;
-    margin-right: 3%;
-}
-.project_3, .under_project_3 {
-    margin-right: 2%;
-}
-.project_1:hover, .project_2:hover, .project_3:hover{
+.project:hover{
     box-shadow:0 0 0 400px rgba(0, 0, 0, 0.8) inset;
     transition: 0.3s;
 }
-.project_wrapper_1, .project_wrapper_2, .project_wrapper_3  {
+.project_wrapper {
     display: none;
 }
 .project_text_1 {
@@ -333,7 +326,7 @@ section{
         padding-top: 260px;
         padding-bottom: 90px;
     }
-    .project_1, .project_2, .project_3 {
+    .project {
         height: 300px;
     }
     .project_text_1{
@@ -343,9 +336,7 @@ section{
     .project_text_2 {
         font-size: 30px;
     }
-    .project_button {
-        margin-top: 80px;
-    }
+
 }
 @media (max-width: 992px) {
     #main_picture {
@@ -374,20 +365,21 @@ section{
         font-size: 20px;
         font-family: 'Courgette', cursive;
     }
-    .project_1, .project_2, .project_3 {
-        width: 80%;
-        margin-left: 10%;
+    .project, .under_project_mob {
+        width: 400px;
+        margin-left: calc(50% - 200px);
+        margin-top: 100px;
     }
-    .project_2, .project_3 {
+    #first_project {
         margin-top: 50px;
     }
     .project_button {
         font-size: 20px;
     }
-    .under_project_1, .under_project_2, .under_project_3 {
+    .under_project {
         display: none;
     }
-    .under_project_mob_1, .under_project_mob_2, .under_project_mob_3 {
+    .under_project_mob {
         display: block;
     }
 }
@@ -413,5 +405,12 @@ section{
     }
     #socials {
         display: none;
+    }
+    .project, .under_project_mob {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .project_button {
+        font-size: 12px;
     }
 }
