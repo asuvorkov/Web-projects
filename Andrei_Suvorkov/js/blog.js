@@ -46,10 +46,6 @@
         });
     }
 
-
-
-
-    /* portfolio projects animation */
     /* portfolio projects animation */
     $('.project_wrapper').hide();
     $('.project').hover(function() {
